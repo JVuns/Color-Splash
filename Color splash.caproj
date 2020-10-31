@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Color splash</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1afvql1ti2vdg</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>600</width>
+        <height>300</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="player" sid="529492411143653">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="currentMove" sid="171947652013440" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="115167840657378">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="664825857966596">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="628053805266462" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\main character\Assets\Main character overworld\idle animation\down idle.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\left idle.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\right idle.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\up idle.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="walkingUp" pingpong="0" repeatcount="1" repeatto="0" sid="931836382138815" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="walkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="887528339937283" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="walkingDown" pingpong="0" repeatcount="1" repeatto="0" sid="499944359932014" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down4.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="walkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="401833200919724" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="876280765425699">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground" sid="737966872147337">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset_desert0.1.png" />
+        </object-type>
+        <object-type name="Tilemap" sid="875421372938476">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset_desert0.2.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap2" sid="518918439446881">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap3" sid="684035240131209">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap5" sid="199417311765266">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="EventTerrain" sid="266658898267025">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap4" sid="441013884875550">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap6" sid="617756534506381">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap7" sid="691304220609368">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="BaseTerrain" sid="550749863840533">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Tileset_desert0.4.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Sprite" sid="689521453279502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481002347673099" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="279207081191750">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465323868963098" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="124287354188459">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="815031434567329">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="110492767171320">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160898490730803" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Slime_anim\Frame001.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SlimeDetectRange" sid="383912618489879">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915925324811988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="926412936477005">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141258080465264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="999451410974822">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="TopTerrain" sid="799475293232926">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Tileset_desert0.3.png" />
+            <tiles />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Desert_ov.xml</layout>
+        <layout>Next_ov.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Global_ev.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
