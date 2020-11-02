@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Desert_ov</layout>
+        <layout order="1">Next_ov</layout>
+        <layout order="4">common</layout>
+        <layout active="1" order="3">Overworld</layout>
+        <event-sheet order="2">Global_ev</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="0" name="About" />
+        <property expanded="0" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="0" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/houseObject/" />
+        <folder expanded="1" path="animation-folder/treeObject/" />
+        <folder expanded="1" path="animation-folder/RockObject/" />
+        <folder expanded="1" path="animation-folder/bushObject/" />
+        <folder expanded="1" path="animation-folder/RockObject2/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/SlimeDetectRange/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+    </folders-expanded>
+</c2uistate>
