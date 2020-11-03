@@ -11,10 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout order="1">Grass_ov</layout>
-        <layout order="2">Desert_ov</layout>
-        <event-sheet order="3">Global_ev</event-sheet>
-        <event-sheet active="1" order="4">Mainmenu</event-sheet>
+        <layout order="2">Grass_ov</layout>
+        <layout order="4">Desert_ov</layout>
+        <layout active="1" order="6">Dessert_eng</layout>
+        <event-sheet order="5">Dessert_ev</event-sheet>
+        <event-sheet order="1">Mainmenu_ev</event-sheet>
+        <event-sheet order="7">Engaged_ev</event-sheet>
+        <event-sheet order="3">Grass_ev</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -25,7 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
@@ -39,10 +42,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/player/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Slime_ov/" />
         <folder expanded="1" path="animation-folder/SlimeDetectRange/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/title/" />
         <folder expanded="1" path="animation-folder/title2/" />
@@ -55,5 +57,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/StartButton/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Enemy_eng/" />
+        <folder expanded="1" path="animation-folder/Player_eng/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Healthbar/" />
+        <folder expanded="1" path="animation-folder/Monolith/" />
+        <folder expanded="1" path="animation-folder/Frame/" />
     </folders-expanded>
 </c2uistate>
