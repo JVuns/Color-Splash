@@ -55,16 +55,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Tilemap" sid="230985559107625">
-            <plugin id="Tilemap" />
-            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass Atlas.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap2" sid="321365037647034">
-            <plugin id="Tilemap" />
-            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass decor extra.png" />
-            <tiles />
-        </object-type>
         <object-type name="houseObject" sid="686977292206251">
             <plugin id="Sprite" />
             <animation-folder>
@@ -946,6 +936,16 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="GrassOverworld" sid="665423848512614">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass Atlas.png" />
+            <tiles />
+        </object-type>
+        <object-type name="GrassOverworldExtra" sid="681624863891579">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass decor extra.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -961,8 +961,8 @@
         <event-sheet>Grass_ev.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="657" />
-        <global-instance type="Mainmenu" uid="658">
+        <global-instance type="Keyboard" uid="857" />
+        <global-instance type="Mainmenu" uid="858">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -976,7 +976,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Touch" uid="659">
+        <global-instance type="Touch" uid="859">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
