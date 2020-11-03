@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Color splash</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1afvql1ti2vdg</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>608</width>
+        <height>320</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Tilemap" sid="230985559107625">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass Atlas.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap2" sid="321365037647034">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass decor extra.png" />
+            <tiles />
+        </object-type>
+        <object-type name="houseObject" sid="686977292206251">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597892283781809" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\house object.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.2" />
+                            <point x="0.5" y="0.00625" />
+                            <point x="0.714286" y="0.2" />
+                            <point x="0.982143" y="0.5" />
+                            <point x="0.883929" y="0.91875" />
+                            <point x="0.5" y="0.9875" />
+                            <point x="0.116071" y="0.91875" />
+                            <point x="0.0178571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="treeObject" sid="911677478155991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431521236149717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\tree object.png">
+                        <collision-poly>
+                            <point x="0.359375" y="0.2875" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.609375" y="0.3125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.5" y="0.8375" />
+                            <point x="0.4375" y="0.65" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RockObject" sid="848781965505832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864093945978964" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Rock Object.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bushObject" sid="179981561475846">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932301933123571" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\bush object.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.15625" y="0.84375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RockObject2" sid="217001874457457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672098950518905" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Rock Object.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="529492411143653">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="currentMove" sid="171947652013440" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="115167840657378">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="664825857966596">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="628053805266462" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\main character\Assets\Main character overworld\idle animation\down idle.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\left idle.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\right idle.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\idle animation\up idle.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="walkingUp" pingpong="0" repeatcount="1" repeatto="0" sid="931836382138815" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up3.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\up walking animation\up4.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="walkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="887528339937283" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right3.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\right walking animation\right4.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="walkingDown" pingpong="0" repeatcount="1" repeatto="0" sid="499944359932014" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down3.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\down walking animation\down4.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="walkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="401833200919724" speed="8">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left3.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Assets\Main character overworld\left walking animation\left4.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.0546875" />
+                            <point x="0.523438" y="0.00390625" />
+                            <point x="0.722656" y="0.03125" />
+                            <point x="0.832031" y="0.480469" />
+                            <point x="0.820313" y="0.753906" />
+                            <point x="0.71875" y="0.972656" />
+                            <point x="0.277344" y="0.96875" />
+                            <point x="0.167969" y="0.554688" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="876280765425699">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground" sid="737966872147337">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset_desert0.1.png" />
+        </object-type>
+        <object-type name="Tilemap3" sid="684035240131209">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap5" sid="199417311765266">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="EventTerrain" sid="266658898267025">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Asset\Multim\Exported assets\Tileset.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap4" sid="441013884875550">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap6" sid="617756534506381">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap7" sid="691304220609368">
+            <plugin id="Tilemap" />
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="BaseTerrain" sid="550749863840533">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Tileset_desert0.4.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Sprite" sid="689521453279502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481002347673099" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="279207081191750">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465323868963098" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slime_ov" sid="124287354188459">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="815031434567329">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="110492767171320">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160898490730803" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Slime_anim\Frame001.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SlimeDetectRange" sid="383912618489879">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915925324811988" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="926412936477005">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141258080465264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="999451410974822">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="TopTerrain" sid="799475293232926">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Schole\Courses\Multim\Multim asset\Exported assets\Tileset_desert0.3.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Sprite6" sid="903717820113204">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="377441990794035" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="315342447644112">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609625675110491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\title.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.4375" />
+                            <point x="0.5" y="0.0416667" />
+                            <point x="0.893333" y="0.333333" />
+                            <point x="0.933333" y="0.5" />
+                            <point x="0.933333" y="0.791667" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.12" y="0.625" />
+                            <point x="0.14" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title2" sid="267529074228209">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508712890924227" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\title.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.5" />
+                            <point x="0.88" y="0.375" />
+                            <point x="0.906667" y="0.5" />
+                            <point x="0.913333" y="0.729167" />
+                            <point x="0.16" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Untitled" sid="751419118265393">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394635547489147" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.500534" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\Untitled.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Untitled2" sid="585326693844918">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390179221114617" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.500534" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\Untitled.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title3" sid="903029021285732">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761247896488742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\title.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.5" />
+                            <point x="0.88" y="0.375" />
+                            <point x="0.906667" y="0.5" />
+                            <point x="0.913333" y="0.729167" />
+                            <point x="0.16" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Untitled3" sid="286758719269227">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383978971883034" speed="5">
+                    <frame duration="1" hotspotX="0.500266" hotspotY="0.500534" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\Untitled.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title4" sid="172511540786744">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562754728142913" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\title.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.4375" />
+                            <point x="0.5" y="0.0416667" />
+                            <point x="0.886667" y="0.354167" />
+                            <point x="0.926667" y="0.5" />
+                            <point x="0.933333" y="0.791667" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.133333" y="0.583333" />
+                            <point x="0.14" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sound" sid="790508393990828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513136770489071" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\sound.png">
+                        <collision-poly>
+                            <point x="0.354167" y="0.354167" />
+                            <point x="0.5" y="0.270833" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.729167" y="0.5" />
+                            <point x="0.645833" y="0.645833" />
+                            <point x="0.5" y="0.708333" />
+                            <point x="0.354167" y="0.645833" />
+                            <point x="0.291667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartButton" sid="258325378469705">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="scale" sid="346972514166784" type="number" />
+                <instance-variable name="grow" sid="173458897177049" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861988269593769" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\Start button.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.979167" y="0.5" />
+                            <point x="0.5625" y="0.5625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.0416667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mainmenu" sid="443600194171012">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="soundbutton" sid="158501657818023">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Start" sid="858316593819270">
+            <plugin id="Button" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="502201009276376">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="SliderBar" sid="608951197713439">
+            <plugin id="sliderbar" />
+        </object-type>
+        <object-type name="Touch" sid="525475127102987">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite7" sid="800191716998162">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604078225030442" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\slidebar_1.png">
+                        <collision-poly>
+                            <point x="0.416667" y="0.416667" />
+                            <point x="0.583333" y="0.416667" />
+                            <point x="0.958333" y="0.5" />
+                            <point x="0.479167" y="0.520833" />
+                            <point x="0.104167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="606681180501733">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="limit" sid="772953531205509" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="510146886658372">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521433293998554" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\slidebar_2.png">
+                        <collision-poly>
+                            <point x="0.395833" y="0.395833" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.541667" y="0.458333" />
+                            <point x="0.541667" y="0.541667" />
+                            <point x="0.5" y="0.5625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.395833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap8" sid="886117465981571">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Ov_tileset\BaseTerrain.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Enemy_eng" sid="528333203579929">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340899624586625" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Entities_sprite\Slime_anim\Frame001.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player_eng" sid="832674890200217">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="135543610866213" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398797015699670" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Desktop\c2 mess\Main character Assets\engaged\Idle\Frame001.png">
+                        <collision-poly>
+                            <point x="0.408333" y="0.408333" />
+                            <point x="0.5" y="0.15" />
+                            <point x="0.608333" y="0.391667" />
+                            <point x="0.691667" y="0.5" />
+                            <point x="0.591667" y="0.591667" />
+                            <point x="0.5" y="0.7" />
+                            <point x="0.458333" y="0.541667" />
+                            <point x="0.366667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="630779972172634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436927094154388" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="744521493501978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153897711894167" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="734924065689518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499765790914356" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\ui_healthbar.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.0833333" />
+                            <point x="0.5" y="0.0416667" />
+                            <point x="0.916667" y="0.0833333" />
+                            <point x="0.916667" y="0.916667" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.0833333" y="0.916667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Healthbar" sid="708149398749290">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318129266434371" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.375" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\ui_healthbar.png">
+                        <collision-poly>
+                            <point x="0.0652174" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.934783" y="0" />
+                            <point x="0.934783" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0652174" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Monolith" sid="616481248780156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514872232028680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Ov_tileset\Interactibles\Frame001.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.104167" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.333333" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Ov_tileset\Interactibles\Frame002.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.104167" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.333333" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Ov_tileset\Interactibles\Frame003.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.104167" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.333333" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Ov_tileset\Interactibles\Frame004.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.104167" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0.333333" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Frame" sid="144082458966434">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392164983623553" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Frame002.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.9375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Frame003.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.9375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Frame004.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.9375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Frame005.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.9375" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0625" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barrier" sid="556538435540409">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="138831822883397">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Explorer_Man" sid="292345129237710">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116020685635786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Explorers\Explorer.png">
+                        <collision-poly>
+                            <point x="0.339844" y="0.015625" />
+                            <point x="0.597656" y="0.015625" />
+                            <point x="0.71875" y="0.507813" />
+                            <point x="0.464844" y="1" />
+                            <point x="0.300781" y="0.683594" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>MainMenu.xml</layout>
+        <layout>Desert_ov.xml</layout>
+        <layout>Dessert_eng.xml</layout>
+        <layout>Grass_ov.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Dessert_ev.xml</event-sheet>
+        <event-sheet>Mainmenu_ev.xml</event-sheet>
+        <event-sheet>Engaged_ev.xml</event-sheet>
+        <event-sheet>Grass_ev.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="657" />
+        <global-instance type="Mainmenu" uid="658">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="659">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Fight.ogg" />
+        <file name="HUD.ogg" />
+        <file name="MainMenu.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
