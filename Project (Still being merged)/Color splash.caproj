@@ -735,6 +735,9 @@
         </object-type>
         <object-type name="Enemy_eng" sid="528333203579929">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="777914647111476" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340899624586625" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Entities_sprite\Slime_anim\Frame001.png">
@@ -945,6 +948,159 @@
             <plugin id="Tilemap" />
             <texture original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\World Assets\Grass decor extra.png" />
             <tiles />
+        </object-type>
+        <object-type name="Sprite5" sid="869363913988344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483473099687128" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerPower" sid="271034813027231">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="343516519722863">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881640590991953" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\fire.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.729167" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\lightning.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.791667" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\water.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.729167" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.291667" y="0.708333" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="801921142488344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633117006733609" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyPower" sid="322515760886688">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254639832820540" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\fire.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.729167" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\lightning.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.791667" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\water.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.729167" y="0.5" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.291667" y="0.708333" />
+                            <point x="0.229167" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="168070940884394">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423540247596866" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="669543076362797">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505045303198846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\endturn.png">
+                        <collision-poly>
+                            <point x="0.270833" y="0.270833" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.729167" y="0.270833" />
+                            <point x="0.979167" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.708333" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.0416667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="369197925568467">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871767313166011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\shield.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.5" y="0.270833" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.333333" y="0.666667" />
+                            <point x="0.270833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

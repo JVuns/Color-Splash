@@ -11,12 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout active="1" order="2">Grass_ov</layout>
+        <layout order="2">Grass_ov</layout>
         <layout order="4">Dessert_eng</layout>
         <layout order="6">Desert_ov</layout>
         <event-sheet order="1">Mainmenu_ev</event-sheet>
         <event-sheet order="3">Grass_ev</event-sheet>
-        <event-sheet order="5">Engaged_ev</event-sheet>
+        <event-sheet active="1" order="5">Engaged_ev</event-sheet>
         <event-sheet order="7">Dessert_ev</event-sheet>
     </open-tabs>
     <properties>
@@ -66,5 +66,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Monolith/" />
         <folder expanded="1" path="animation-folder/Frame/" />
         <folder expanded="1" path="animation-folder/Explorer_Man/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/PlayerPower/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/EnemyPower/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/Sprite13/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
     </folders-expanded>
 </c2uistate>
