@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">MainMenu</layout>
-        <layout order="2">Grass_ov</layout>
-        <layout order="6">Dessert_eng</layout>
-        <layout order="4">Desert_ov</layout>
-        <event-sheet active="1" order="3">Grass_ev</event-sheet>
-        <event-sheet order="7">Engaged_ev</event-sheet>
-        <event-sheet order="5">Dessert_ev</event-sheet>
-        <event-sheet order="1">Mainmenu_ev</event-sheet>
+        <layout order="1">MainMenu</layout>
+        <layout active="1" order="3">Grass_ov</layout>
+        <layout order="5">Desert_ov</layout>
+        <layout order="7">Dessert_eng</layout>
+        <event-sheet order="2">Mainmenu_ev</event-sheet>
+        <event-sheet order="4">Grass_ev</event-sheet>
+        <event-sheet order="6">Dessert_ev</event-sheet>
+        <event-sheet order="8">Engaged_ev</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
@@ -79,7 +79,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerES/" />
         <folder expanded="1" path="animation-folder/Sprite17/" />
         <folder expanded="1" path="animation-folder/EnemyES/" />
+        <folder expanded="1" path="animation-folder/OldMan1/" />
+        <folder expanded="1" path="animation-folder/OldMan2/" />
+        <folder expanded="1" path="animation-folder/Ranger1/" />
+        <folder expanded="1" path="animation-folder/Ranger2/" />
+        <folder expanded="1" path="animation-folder/Ranger3/" />
+        <folder expanded="1" path="animation-folder/Ranger4/" />
+        <folder expanded="1" path="animation-folder/OldManLeft/" />
         <folder expanded="1" path="animation-folder/Sprite18/" />
-        <folder expanded="1" path="animation-folder/Sprite19/" />
     </folders-expanded>
 </c2uistate>
