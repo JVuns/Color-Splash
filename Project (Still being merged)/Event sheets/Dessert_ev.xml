@@ -314,6 +314,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-36" name="Save" sid="706552551266276" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="170826395688417" type="System">
                     <param id="0" name="Layout">Dessert_eng</param>
                 </action>
