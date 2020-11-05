@@ -1237,6 +1237,44 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="Sprite18" sid="496910341962930">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725172384897783" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\RangerDialogue1.png">
+                        <collision-poly>
+                            <point x="0.0125" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9875" y="0.0555556" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9875" y="0.944444" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0125" y="0.944444" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="944578925626284">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345017942469501" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\RangerDialogue2.png">
+                        <collision-poly>
+                            <point x="0.0125" y="0.0555556" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9875" y="0.0555556" />
+                            <point x="1" y="0.5" />
+                            <point x="0.9875" y="0.944444" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0125" y="0.944444" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
