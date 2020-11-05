@@ -1233,6 +1233,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="DialogueZoneRanger" sid="362843987273658">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -3,187 +3,243 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dessert_ev</name>
     <events>
-        <event-block sid="227452366930529">
-            <conditions>
-                <condition id="2" name="Is playing" sid="642651902666295" type="player">
-                    <param id="0" name="Animation">&quot;Idle&quot;</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="692186526100947" title="Player Movement1">
             <sub-events>
-                <event-block sid="340143776449266">
+                <event-block sid="653412521030117">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="559459649453644" type="Keyboard">
-                            <param id="0" name="Key">38</param>
+                        <condition id="2" name="Key is down" sid="775423407079103" type="Keyboard">
+                            <param id="0" name="Key">87</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="990183488169378" type="player">
-                            <param id="0" name="Animation">&quot;walkingUp&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="762612550110901" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Value">player.animationName</param>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="722498182623631" type="player">
+                            <param id="0" name="Control">2</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="934840488223670">
+                <event-block sid="879051196496022">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="756813293500466" type="Keyboard">
-                            <param id="0" name="Key">40</param>
+                        <condition id="2" name="Key is down" sid="272786755797413" type="Keyboard">
+                            <param id="0" name="Key">83</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="382425900404401" type="player">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="321334833225166" type="player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="936660011075674">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="429489918104577" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="974989261340717" type="player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="802718135617183">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="216580808968162" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="956889041286226" type="player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="332929287252663" title="Player Movement Animation1">
+            <sub-events>
+                <event-block sid="975751978259458">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="169091526705735" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="228346522136875">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="965908598121516" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="885082250974256" type="player">
+                                    <param id="0" name="Animation">&quot;walkingUp&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="576106150394115" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Value">player.animationName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="511277410490617">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="806023377559654" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="779415025135993" type="player">
+                                    <param id="0" name="Animation">&quot;walkingDown&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="200625038927066" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Value">player.animationName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="453154633804393">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="549855103707643" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="986278658849106" type="player">
+                                    <param id="0" name="Animation">&quot;walkingRight&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="473725020504050" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Value">player.animationName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="537425608889560">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="424361873670860" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="177096128410217" type="player">
+                                    <param id="0" name="Animation">&quot;walkingLeft&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="754137101629189" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Value">player.animationName</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="923141391245484">
+                    <conditions>
+                        <condition id="7" name="On any key released" sid="805832844777573" type="Keyboard" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="908248828726077" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="366113422875092">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="969033959278312" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;walkingUp&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="521172655685386" type="player">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="284745762643719">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="431913334995472" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;walkingRight&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="512572852593422" type="player">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="983414710778177">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="332518704784166" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;walkingDown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="115154836803546" type="player">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="571263805493335">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="158758678163705" type="player">
+                                    <param id="0" name="Instance variable">currentMove</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;walkingLeft&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="530486606972056" type="player">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="535185839287100">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="195726659026384" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="804214396203536" type="player">
                             <param id="0" name="Animation">&quot;walkingDown&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-10" name="Set value" sid="151834944391107" type="player">
+                        <action id="-10" name="Set value" sid="915467015782562" type="player">
                             <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Value">player.animationName</param>
+                            <param id="1" name="Value">&quot;walkingDown&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="731111512619500">
+                <event-block sid="315381445736075">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="189777696932570" type="Keyboard">
-                            <param id="0" name="Key">39</param>
+                        <condition id="0" name="On key pressed" sid="223773396201253" type="Keyboard">
+                            <param id="0" name="Key">87</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="682626395732192" type="player">
-                            <param id="0" name="Animation">&quot;walkingRight&quot;</param>
+                        <action id="4" name="Set animation" sid="457254311617311" type="player">
+                            <param id="0" name="Animation">&quot;walkingUp&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-10" name="Set value" sid="557053626630319" type="player">
+                        <action id="-10" name="Set value" sid="259546872412040" type="player">
                             <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Value">player.animationName</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="258495495241907">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="799719532174836" type="Keyboard">
-                            <param id="0" name="Key">37</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="565800122384395" type="player">
-                            <param id="0" name="Animation">&quot;walkingLeft&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-10" name="Set value" sid="362269524198034" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Value">player.animationName</param>
+                            <param id="1" name="Value">&quot;walkingUp&quot;</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="388172384121267">
-            <conditions>
-                <condition id="7" name="On any key released" sid="406244453808572" type="Keyboard" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="782164538271052" type="player">
-                    <param id="0" name="Animation">&quot;Idle&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="228348888168380">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="105507270749485" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;walkingUp&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="756347334389463" type="player">
-                            <param id="0" name="Frame number">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="197991387868706">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="247700388981709" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;walkingRight&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="188105636945307" type="player">
-                            <param id="0" name="Frame number">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="373051763165003">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="156984346339472" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;walkingDown&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="288562763369908" type="player">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="682560116101780">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="414261249135576" type="player">
-                            <param id="0" name="Instance variable">currentMove</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;walkingLeft&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="989736943056265" type="player">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="643905357167931">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="626379013322297" type="Keyboard">
-                    <param id="0" name="Key">40</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="117701318127409" type="player">
-                    <param id="0" name="Animation">&quot;walkingDown&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="637740208124712" type="player">
-                    <param id="0" name="Instance variable">currentMove</param>
-                    <param id="1" name="Value">&quot;walkingDown&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="291474399788679">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="298171161197201" type="Keyboard">
-                    <param id="0" name="Key">38</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="216775946940418" type="player">
-                    <param id="0" name="Animation">&quot;walkingUp&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="509962313930781" type="player">
-                    <param id="0" name="Instance variable">currentMove</param>
-                    <param id="1" name="Value">&quot;walkingUp&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-block sid="893024851356709">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="272986634710533" type="player">
