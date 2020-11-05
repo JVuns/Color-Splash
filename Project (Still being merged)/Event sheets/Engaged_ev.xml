@@ -59,8 +59,11 @@
                 <action id="5" name="Set frame" sid="473532708123053" type="Frame">
                     <param id="0" name="Frame number">3</param>
                 </action>
-                <action id="-25" name="Go to layout (by name)" sid="961893949232635" type="System">
-                    <param id="0" name="Layout">&quot;Desert_ov&quot;</param>
+                <action id="6" name="Stop" sid="961893949232635" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-37" name="Load" sid="608742766376384" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
                 </action>
             </actions>
         </event-block>

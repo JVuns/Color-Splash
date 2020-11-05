@@ -278,6 +278,10 @@
                 <action id="-25" name="Go to layout (by name)" sid="607970163419600" type="System">
                     <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
                 </action>
+                <action id="-9" name="Destroy" sid="195224216432074" type="Slime_ov" />
+                <action id="-36" name="Save" sid="864854017030021" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="906260886846051">
