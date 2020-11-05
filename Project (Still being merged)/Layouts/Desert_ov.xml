@@ -166,7 +166,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="305">
+                <instance type="Player_ES" uid="305">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -215,7 +215,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="1">
+                <instance type="Player_ES" uid="1">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -242,7 +242,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="9">
+                <instance type="Player_ES" uid="9">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -269,7 +269,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="10">
+                <instance type="Player_ES" uid="10">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -296,7 +296,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="11">
+                <instance type="Player_ES" uid="11">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -323,7 +323,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="12">
+                <instance type="Player_ES" uid="12">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -350,7 +350,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="13">
+                <instance type="Player_ES" uid="13">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -377,7 +377,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="14">
+                <instance type="Player_ES" uid="14">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -404,7 +404,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="15">
+                <instance type="Player_ES" uid="15">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -431,7 +431,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="16">
+                <instance type="Player_ES" uid="16">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -458,7 +458,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="17">
+                <instance type="Player_ES" uid="17">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -485,7 +485,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="18">
+                <instance type="Player_ES" uid="18">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -512,7 +512,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="19">
+                <instance type="Player_ES" uid="19">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -539,7 +539,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="20">
+                <instance type="Player_ES" uid="20">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -566,7 +566,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="21">
+                <instance type="Player_ES" uid="21">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -593,7 +593,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="22">
+                <instance type="Player_ES" uid="22">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -620,7 +620,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="23">
+                <instance type="Player_ES" uid="23">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -647,7 +647,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="24">
+                <instance type="Player_ES" uid="24">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -674,7 +674,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="25">
+                <instance type="Player_ES" uid="25">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -701,7 +701,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="26">
+                <instance type="Player_ES" uid="26">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -728,7 +728,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="27">
+                <instance type="Player_ES" uid="27">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -755,7 +755,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="28">
+                <instance type="Player_ES" uid="28">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -782,7 +782,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="29">
+                <instance type="Player_ES" uid="29">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -809,7 +809,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="30">
+                <instance type="Player_ES" uid="30">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -836,7 +836,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="31">
+                <instance type="Player_ES" uid="31">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -863,7 +863,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="32">
+                <instance type="Player_ES" uid="32">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -890,7 +890,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="33">
+                <instance type="Player_ES" uid="33">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -917,7 +917,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="34">
+                <instance type="Player_ES" uid="34">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -944,7 +944,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="35">
+                <instance type="Player_ES" uid="35">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -971,7 +971,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="36">
+                <instance type="Player_ES" uid="36">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -998,7 +998,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="37">
+                <instance type="Player_ES" uid="37">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1025,7 +1025,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="38">
+                <instance type="Player_ES" uid="38">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1052,7 +1052,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="39">
+                <instance type="Player_ES" uid="39">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1079,7 +1079,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="40">
+                <instance type="Player_ES" uid="40">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1106,7 +1106,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="41">
+                <instance type="Player_ES" uid="41">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1133,7 +1133,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="42">
+                <instance type="Player_ES" uid="42">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1160,7 +1160,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="43">
+                <instance type="Player_ES" uid="43">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1187,7 +1187,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="44">
+                <instance type="Player_ES" uid="44">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1214,7 +1214,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="45">
+                <instance type="Player_ES" uid="45">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1241,7 +1241,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="46">
+                <instance type="Player_ES" uid="46">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1268,7 +1268,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="47">
+                <instance type="Player_ES" uid="47">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1295,7 +1295,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="48">
+                <instance type="Player_ES" uid="48">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1322,7 +1322,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="49">
+                <instance type="Player_ES" uid="49">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1349,7 +1349,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="50">
+                <instance type="Player_ES" uid="50">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1376,7 +1376,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="51">
+                <instance type="Player_ES" uid="51">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1403,7 +1403,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="52">
+                <instance type="Player_ES" uid="52">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1430,7 +1430,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="53">
+                <instance type="Player_ES" uid="53">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1457,7 +1457,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="54">
+                <instance type="Player_ES" uid="54">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1484,7 +1484,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="55">
+                <instance type="Player_ES" uid="55">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1511,7 +1511,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="56">
+                <instance type="Player_ES" uid="56">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1538,7 +1538,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="57">
+                <instance type="Player_ES" uid="57">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1565,7 +1565,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="58">
+                <instance type="Player_ES" uid="58">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1592,7 +1592,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="59">
+                <instance type="Player_ES" uid="59">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1619,7 +1619,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="60">
+                <instance type="Player_ES" uid="60">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1646,7 +1646,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="61">
+                <instance type="Player_ES" uid="61">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1673,7 +1673,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="62">
+                <instance type="Player_ES" uid="62">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1700,7 +1700,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="63">
+                <instance type="Player_ES" uid="63">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1727,7 +1727,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="64">
+                <instance type="Player_ES" uid="64">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1754,7 +1754,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="65">
+                <instance type="Player_ES" uid="65">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1781,7 +1781,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="66">
+                <instance type="Player_ES" uid="66">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1808,7 +1808,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="67">
+                <instance type="Player_ES" uid="67">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1835,7 +1835,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="68">
+                <instance type="Player_ES" uid="68">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1862,7 +1862,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="69">
+                <instance type="Player_ES" uid="69">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1889,7 +1889,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="70">
+                <instance type="Player_ES" uid="70">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1916,7 +1916,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="71">
+                <instance type="Player_ES" uid="71">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1943,7 +1943,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="72">
+                <instance type="Player_ES" uid="72">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1970,7 +1970,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="73">
+                <instance type="Player_ES" uid="73">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1997,7 +1997,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="74">
+                <instance type="Player_ES" uid="74">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2024,7 +2024,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="75">
+                <instance type="Player_ES" uid="75">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2051,7 +2051,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="76">
+                <instance type="Player_ES" uid="76">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2078,7 +2078,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="77">
+                <instance type="Player_ES" uid="77">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2105,7 +2105,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="78">
+                <instance type="Player_ES" uid="78">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2132,7 +2132,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="79">
+                <instance type="Player_ES" uid="79">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2159,7 +2159,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="80">
+                <instance type="Player_ES" uid="80">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2186,7 +2186,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="81">
+                <instance type="Player_ES" uid="81">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2213,7 +2213,7 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
-                <instance type="Barrier" uid="82">
+                <instance type="Player_ES" uid="82">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <hotspot>Top-left</hotspot>

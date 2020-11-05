@@ -913,7 +913,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Barrier" sid="556538435540409">
+        <object-type name="Player_ES" sid="556538435540409">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Solid" sid="138831822883397">
@@ -1097,6 +1097,137 @@
                             <point x="0.5" y="0.75" />
                             <point x="0.333333" y="0.666667" />
                             <point x="0.270833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="981419920444561">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147614542961641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Frame2" sid="413812071940995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="209246136497487" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame006.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame005.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame004.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame003.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame002.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\HUD\Slimehealth\Frame001.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.854167" y="0.5" />
+                            <point x="0.604167" y="0.604167" />
+                            <point x="0.395833" y="0.604167" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="841131917449412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="693069681601152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="467917336136436">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="PlayerES" sid="838081148150225">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127781000882267" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\slidebar_2.png">
+                        <collision-poly>
+                            <point x="0.395833" y="0.395833" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.541667" y="0.458333" />
+                            <point x="0.541667" y="0.541667" />
+                            <point x="0.5" y="0.5625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.395833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="433072046541429">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323759980746066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyES" sid="249157107272458">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="506506029077035" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Title\slidebar_2.png">
+                        <collision-poly>
+                            <point x="0.395833" y="0.395833" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.541667" y="0.458333" />
+                            <point x="0.541667" y="0.541667" />
+                            <point x="0.5" y="0.5625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.395833" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
