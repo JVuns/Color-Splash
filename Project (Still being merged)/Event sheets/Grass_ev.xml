@@ -281,6 +281,9 @@
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="407323772889295" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
                                 <action id="-3" name="Set position" sid="363679387620375" type="Ranger1">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
@@ -385,6 +388,9 @@
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="591370620300113" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
                                 <action id="-42" name="Signal" sid="142306298033936" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
@@ -429,6 +435,9 @@
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="900567894228431" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
                                 <action id="-3" name="Set position" sid="706511310254637" type="Ranger4">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
@@ -468,6 +477,9 @@
                                 <action id="-12" name="Set group active" sid="519426800857340" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="998792447714505" type="player">
+                                    <param id="0" name="Max Speed">64</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="716720860538097" type="ZoneBlock1" />
                                 <action id="-42" name="Signal" sid="531761265047491" type="System">
@@ -517,6 +529,9 @@
                                 <action id="-12" name="Set group active" sid="864830597550086" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="940885194606167" type="player">
+                                    <param id="0" name="Max Speed">0</param>
                                 </action>
                                 <action id="-3" name="Set position" sid="847463080145195" type="OldMan1">
                                     <param id="0" name="X">154</param>
@@ -590,6 +605,9 @@
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="478782699518297" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
                                 <action id="-42" name="Signal" sid="759674365862042" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
@@ -641,6 +659,9 @@
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="455528700326964" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
                                 <action id="-3" name="Set position" sid="385892132859329" type="Sprite18">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
@@ -680,6 +701,9 @@
                                 <action id="-12" name="Set group active" sid="519751146373502" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="378550089516153" type="player">
+                                    <param id="0" name="Max Speed">64</param>
                                 </action>
                                 <action id="-42" name="Signal" sid="475047204718962" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
