@@ -410,6 +410,9 @@
                     <param id="0" name="Slot">&quot;battle_save&quot;</param>
                 </action>
                 <action id="-9" name="Destroy" sid="374183565787992" type="Enemy_eng" />
+                <action id="6" name="Stop" sid="966455301526144" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
