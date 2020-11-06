@@ -327,6 +327,9 @@
                 <action id="5" name="Set frame" sid="545644113563102" type="Frame2">
                     <param id="0" name="Frame number">Enemy_eng.Health</param>
                 </action>
+                <action id="5" name="Set frame" sid="181048986125106" type="Frame3">
+                    <param id="0" name="Frame number">Advantages</param>
+                </action>
             </actions>
         </event-block>
     </events>
