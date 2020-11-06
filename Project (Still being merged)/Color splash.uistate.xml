@@ -97,5 +97,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Villager1/" />
         <folder expanded="1" path="animation-folder/Villager2/" />
         <folder expanded="1" path="animation-folder/Villager3/" />
+        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/KeyCollectible/" />
     </folders-expanded>
 </c2uistate>
