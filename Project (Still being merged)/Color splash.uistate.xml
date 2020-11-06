@@ -86,11 +86,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Ranger3/" />
         <folder expanded="1" path="animation-folder/Ranger4/" />
         <folder expanded="1" path="animation-folder/OldManLeft/" />
-        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/OldMan3/" />
         <folder expanded="1" path="animation-folder/Sprite19/" />
         <folder expanded="1" path="animation-folder/Frame3/" />
         <folder expanded="1" path="animation-folder/PaintingToolsCollectible/" />
         <folder expanded="1" path="animation-folder/WhistleCollectible/" />
         <folder expanded="1" path="animation-folder/WhistleCollectibleNotif/" />
+        <folder expanded="1" path="animation-folder/Villager/" />
+        <folder expanded="1" path="animation-folder/BlueSlime_ov/" />
+        <folder expanded="1" path="animation-folder/Villager1/" />
+        <folder expanded="1" path="animation-folder/Villager2/" />
+        <folder expanded="1" path="animation-folder/Villager3/" />
     </folders-expanded>
 </c2uistate>

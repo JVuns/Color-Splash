@@ -1351,7 +1351,7 @@
             </behaviors>
             <texture />
         </object-type>
-        <object-type name="Sprite18" sid="812631278680389">
+        <object-type name="OldMan3" sid="812631278680389">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962569111468711" speed="5">
@@ -1487,6 +1487,116 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Collectible Whistle.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Villager" sid="783724747795638">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="676280502382680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Generic Villager\VillagerRIght.png">
+                        <collision-poly>
+                            <point x="0.34375" y="0.34375" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.59375" y="0.40625" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlueSlime_ov" sid="457254609980324">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="553703228753983">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="299257918748514">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618843950959949" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Slime\BlueSlime.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VillagerDialogueZone" sid="306969212165114">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Villager1" sid="808377565391960">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="742767308922394" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Villager1.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Villager2" sid="861052337138518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366796599609218" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Villager2.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Villager3" sid="112888172052243">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707733685922403" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Villager3.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="827773619716837">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="269793821397064">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
         </object-type>
     </object-folder>
     <families />

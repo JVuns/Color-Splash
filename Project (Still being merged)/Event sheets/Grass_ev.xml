@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Grass_ev</name>
     <events>
+        <variable constant="0" name="VillageEnemies" sid="724528258736740" static="0" type="number">0</variable>
+        <comment>Detects how many enemy the player has defeated in the village</comment>
         <variable constant="0" name="Layout" sid="639883659243041" static="0" type="number">0</variable>
         <comment>Variable to check where the player layout previously is</comment>
         <variable constant="0" name="Notif" sid="401791057756470" static="0" type="number">0</variable>
@@ -511,12 +513,12 @@
         </event-group>
         <event-group description="" sid="138011311495409" title="OldMan - Dialogue">
             <sub-events>
-                <event-block sid="682911100343532">
+                <event-block sid="174346735148453">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="168782853187859" type="Keyboard">
+                        <condition id="0" name="On key pressed" sid="387399824359546" type="Keyboard">
                             <param id="0" name="Key">69</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="269566245778252" type="System">
+                        <condition id="-14" name="Compare variable" sid="151703777089532" type="System">
                             <param id="0" name="Variable">PaintingTools</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
@@ -524,151 +526,151 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="524749675291829">
+                        <event-block sid="573191991255956">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="441612343136343" type="player">
+                                <condition id="1" name="Is overlapping another object" sid="933175006400239" type="player">
                                     <param id="0" name="Object">OldManDialogueZone</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="894081171223331" type="System">
+                                <condition id="-14" name="Compare variable" sid="844640760766368" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-12" name="Set group active" sid="861660925465725" type="System">
+                                <action id="-12" name="Set group active" sid="227221496236806" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="864830597550086" type="System">
+                                <action id="-12" name="Set group active" sid="236310735281843" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="940885194606167" type="player">
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="859998930367981" type="player">
                                     <param id="0" name="Max Speed">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="847463080145195" type="OldMan1">
+                                <action id="-3" name="Set position" sid="409143915031690" type="OldMan1">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="441322927344847" type="System">
+                                <action id="-16" name="Wait" sid="310798287948918" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-10" name="Add to" sid="423599877205200" type="System">
+                                <action id="-10" name="Add to" sid="610179413860133" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-41" name="Wait for signal" sid="106461050504334" type="System">
+                                <action id="-41" name="Wait for signal" sid="509210969921467" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="867403724497843" type="OldMan1">
+                                <action id="-3" name="Set position" sid="552530621442907" type="OldMan1">
                                     <param id="0" name="X">-325</param>
                                     <param id="1" name="Y">0</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="782533935476837">
+                        <event-block sid="547427251585756">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="535133565769519" type="player">
+                                <condition id="1" name="Is overlapping another object" sid="880900351524658" type="player">
                                     <param id="0" name="Object">OldManDialogueZone</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="892677718153214" type="System">
+                                <condition id="-14" name="Compare variable" sid="270352026108438" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-3" name="Set position" sid="388223832173600" type="OldMan2">
+                                <action id="-3" name="Set position" sid="538602505963805" type="OldMan2">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="412449466098141" type="System">
+                                <action id="-16" name="Wait" sid="977829848063309" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-10" name="Add to" sid="470039773786442" type="System">
+                                <action id="-10" name="Add to" sid="921798913857154" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-41" name="Wait for signal" sid="191132373672201" type="System">
+                                <action id="-41" name="Wait for signal" sid="947721402856553" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="166170343420703" type="OldMan2">
+                                <action id="-3" name="Set position" sid="187744235567360" type="OldMan2">
                                     <param id="0" name="X">-325</param>
                                     <param id="1" name="Y">50</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="563459492830894">
+                        <event-block sid="876793823447620">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="915869031018078" type="player">
+                                <condition id="1" name="Is overlapping another object" sid="870690681365779" type="player">
                                     <param id="0" name="Object">OldManDialogueZone</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="373923203740774" type="System">
+                                <condition id="-14" name="Compare variable" sid="280591743324519" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-42" name="Signal" sid="934970301155905" type="System">
+                                <action id="-42" name="Signal" sid="999912056675513" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="873422322324265" type="PaintingToolsCollectible">
+                                <action id="-3" name="Set position" sid="946566726322088" type="PaintingToolsCollectible">
                                     <param id="0" name="X">243</param>
                                     <param id="1" name="Y">128</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="667777085737724" type="System">
+                                <action id="-16" name="Wait" sid="375352582518340" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-10" name="Add to" sid="488275208917074" type="System">
+                                <action id="-10" name="Add to" sid="663475687900741" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-41" name="Wait for signal" sid="933257397333044" type="System">
+                                <action id="-41" name="Wait for signal" sid="883678924549936" type="System">
                                     <param id="0" name="Tag">&quot;stopSpecialDialogue&quot;</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="891000215196555" type="PaintingToolsCollectible">
+                                <action id="-3" name="Set position" sid="342120321189870" type="PaintingToolsCollectible">
                                     <param id="0" name="X">0</param>
                                     <param id="1" name="Y">-100</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="863516319647652">
+                        <event-block sid="385856782515380">
                             <conditions>
-                                <condition id="1" name="Is overlapping another object" sid="254566793264229" type="player">
+                                <condition id="1" name="Is overlapping another object" sid="309236691935719" type="player">
                                     <param id="0" name="Object">OldManDialogueZone</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="610058802054546" type="System">
+                                <condition id="-14" name="Compare variable" sid="135400135045623" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-12" name="Set group active" sid="660138540826884" type="System">
+                                <action id="-12" name="Set group active" sid="611393956889099" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="567236652362070" type="System">
+                                <action id="-12" name="Set group active" sid="896662103657720" type="System">
                                     <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="478782699518297" type="player">
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="869624772996507" type="player">
                                     <param id="0" name="Max Speed">64</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="681870629329125" type="ZoneBlock1" />
-                                <action id="-42" name="Signal" sid="759674365862042" type="System">
+                                <action id="-9" name="Destroy" sid="206503245520472" type="ZoneBlock1" />
+                                <action id="-42" name="Signal" sid="555498557534005" type="System">
                                     <param id="0" name="Tag">&quot;stopSpecialDialogue&quot;</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="366095017377785" type="System">
+                                <action id="-9" name="Set value" sid="406055279228393" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="517733317010390" type="System">
+                                <action id="-16" name="Wait" sid="547669726015815" type="System">
                                     <param id="0" name="Seconds">0.1</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="765246641944985" type="System">
+                                <action id="-9" name="Set value" sid="174083281362136" type="System">
                                     <param id="0" name="Variable">PaintingTools</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
@@ -712,7 +714,7 @@
                                 <action behavior="8Direction" id="4" name="Set max speed" sid="455528700326964" type="player">
                                     <param id="0" name="Max Speed">0</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="385892132859329" type="Sprite18">
+                                <action id="-3" name="Set position" sid="385892132859329" type="OldMan3">
                                     <param id="0" name="X">154</param>
                                     <param id="1" name="Y">255</param>
                                 </action>
@@ -726,7 +728,7 @@
                                 <action id="-41" name="Wait for signal" sid="914231180876075" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
-                                <action id="-3" name="Set position" sid="869511744456289" type="Sprite18">
+                                <action id="-3" name="Set position" sid="869511744456289" type="OldMan3">
                                     <param id="0" name="X">-325</param>
                                     <param id="1" name="Y">300</param>
                                 </action>
@@ -759,6 +761,229 @@
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="271641385886974" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="448814746650587" title="Villager - Dialogue">
+            <sub-events>
+                <event-block sid="267683538447441">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="666614457227098" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="524550593776181" type="System">
+                            <param id="0" name="Variable">VillageEnemies</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="607223336233654">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="366738669306874" type="player">
+                                    <param id="0" name="Object">VillagerDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="977590066148167" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="550645735032005" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="233266889177157" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="149063760211875" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="190467385832987" type="Villager1">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="396681631149753" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="489510728948913" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="125201565651011" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="467233811869597" type="Villager1">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">350</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="353241348843278">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="906432672715369" type="player">
+                                    <param id="0" name="Object">VillagerDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="848525273337296" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="887342685541403" type="Villager2">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="238406822248124" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="190862825443177" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="339085898569585" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="217804615160618" type="Villager2">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="377860353026580">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="911298434853373" type="player">
+                                    <param id="0" name="Object">VillagerDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="531773072212080" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="344877717617412" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="761576093600440" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="206594755121563" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
+                                <action id="-42" name="Signal" sid="930968019907119" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="320725109456418" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="119880532014015" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="822103510352199">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="320112693098725" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="283728135690218" type="System">
+                            <param id="0" name="Variable">VillageEnemies</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="486269973151131">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="978907959480240" type="player">
+                                    <param id="0" name="Object">VillagerDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="556251066548237" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="235558138837313" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="341849738235013" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="808661553086962" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="752700290040803" type="Villager3">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="130904442605910" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="585409328221582" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="432271022343103" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="696523394022172" type="Villager3">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">350</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="318935320959158">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="985308549132774" type="player">
+                                    <param id="0" name="Object">VillagerDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="323165076672815" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="840856977780698" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="898036288115653" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="182371955799160" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="185846334091113" type="TiledBackground3" />
+                                <action id="-42" name="Signal" sid="269598982664452" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="175792614033883" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="834903485164412" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
@@ -819,6 +1044,184 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="382964239882185" title="NPC + Battle Detection Thingy">
+            <sub-events>
+                <event-block sid="530661829478505">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="532180087162718" type="BlueSlime_ov">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="837171030402748">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="434175538264404" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">BlueSlime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="451666337574304" type="BlueSlime_ov">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="404746139251730">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="169252372296370" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">BlueSlime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="102505291244714" type="BlueSlime_ov">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="889735820005232">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="917865899177229" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">BlueSlime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="781790551094643" type="BlueSlime_ov">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="113687524738020">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="153663181285975" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">BlueSlime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="471950214737536" type="BlueSlime_ov">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="936146275533663">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="678066695553908" type="Slime_ov">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="936872655342434">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="136115860277367" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="743817656099810" type="Slime_ov">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="330498587728202">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="218660824201619" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="398943160595892" type="Slime_ov">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="253575994919691">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="635834193186030" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="785459817035557" type="Slime_ov">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="464405904893279">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="989028311848477" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="847643420078684" type="Slime_ov">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="582320726645411">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="293686070501641" type="player">
+                            <param id="0" name="Object">BlueSlime_ov</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="874266353416666" type="System">
+                            <param id="0" name="Variable">VillageEnemies</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="601378802668079" type="Mainmenu">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="414809306492260" type="System">
+                            <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="639164773818885" type="BlueSlime_ov" />
+                        <action id="-36" name="Save" sid="620269503525970" type="System">
+                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="171560498192053">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="839147119527876" type="player">
+                            <param id="0" name="Object">Slime_ov</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="576317678561185" type="Mainmenu">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="585701865896271" type="System">
+                            <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="967253701881678" type="Slime_ov" />
+                        <action id="-36" name="Save" sid="539886696683309" type="System">
+                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="578846950814058">
             <conditions>
                 <condition id="0" name="On key pressed" sid="416041664666827" type="Keyboard">
@@ -851,94 +1254,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="382964239882185" title="NPC + Battle Detection Thingy">
-            <sub-events>
-                <event-block sid="530661829478505">
-                    <conditions>
-                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="532180087162718" type="Slime_ov">
-                            <param id="0" name="Object">player</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="837171030402748">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="434175538264404" type="System">
-                                    <param id="0" name="First value">player.X+15</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">Slime_ov.X</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="451666337574304" type="Slime_ov">
-                                    <param id="0" name="Control">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="404746139251730">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="169252372296370" type="System">
-                                    <param id="0" name="First value">player.X+15</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">Slime_ov.X</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="102505291244714" type="Slime_ov">
-                                    <param id="0" name="Control">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="889735820005232">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="917865899177229" type="System">
-                                    <param id="0" name="First value">player.Y+15</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Second value">Slime_ov.Y</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="781790551094643" type="Slime_ov">
-                                    <param id="0" name="Control">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="113687524738020">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="153663181285975" type="System">
-                                    <param id="0" name="First value">player.Y+15</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Second value">Slime_ov.Y</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="7" name="Simulate control" sid="471950214737536" type="Slime_ov">
-                                    <param id="0" name="Control">3</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="171560498192053">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="839147119527876" type="player">
-                            <param id="0" name="Object">Slime_ov</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="6" name="Stop" sid="576317678561185" type="Mainmenu">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                        </action>
-                        <action id="-25" name="Go to layout (by name)" sid="585701865896271" type="System">
-                            <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="967253701881678" type="Slime_ov" />
-                        <action id="-36" name="Save" sid="539886696683309" type="System">
-                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>

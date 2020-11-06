@@ -54,6 +54,11 @@
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="628710053472932" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="473532708123053" type="Frame">
@@ -62,7 +67,38 @@
                 <action id="6" name="Stop" sid="961893949232635" type="Mainmenu">
                     <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
+                <action id="-2" name="Go to layout" sid="655161108621375" type="System">
+                    <param id="0" name="Layout">Grass_ov</param>
+                </action>
                 <action id="-37" name="Load" sid="608742766376384" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531112303603392">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="501624317695771" type="Player_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="589696711449270" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="751320474766626" type="Frame">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="6" name="Stop" sid="685021488333670" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="281985580095885" type="System">
+                    <param id="0" name="Layout">Desert_ov</param>
+                </action>
+                <action id="-37" name="Load" sid="830975805989291" type="System">
                     <param id="0" name="Slot">&quot;battle_save&quot;</param>
                 </action>
             </actions>
