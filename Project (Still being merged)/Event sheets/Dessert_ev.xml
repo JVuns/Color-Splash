@@ -3,6 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dessert_ev</name>
     <events>
+        <event-block sid="796343359246588">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="791341723944607" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="452734180779747" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="692186526100947" title="Player Movement1">
             <sub-events>
                 <event-block sid="653412521030117">
@@ -240,6 +251,95 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="717786705262292" title="NPC + Battle Detection Thingy1">
+            <sub-events>
+                <event-block sid="579346340420471">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="148005296181868" type="Slime_ov">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="594123173403340">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="536238531184520" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="776112236279511" type="Slime_ov">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="865625148679148">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="966958977625983" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="425413592117530" type="Slime_ov">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="176679376740967">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="580349232485850" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="916432200834072" type="Slime_ov">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="743773285868891">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="880537445885826" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="930504735329916" type="Slime_ov">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="751962187423490">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="438270097853530" type="player">
+                            <param id="0" name="Object">Slime_ov</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="192697720668927" type="Mainmenu">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="607970163419600" type="System">
+                            <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="195224216432074" type="Slime_ov" />
+                        <action id="-36" name="Save" sid="864854017030021" type="System">
+                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="893024851356709">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="272986634710533" type="player">
@@ -252,91 +352,6 @@
             <actions>
                 <action id="-43" name="Go to next/previous layout" sid="970410716854777" type="System">
                     <param id="0" name="Which">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="579346340420471">
-            <conditions>
-                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="148005296181868" type="Slime_ov">
-                    <param id="0" name="Object">player</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="594123173403340">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="536238531184520" type="System">
-                            <param id="0" name="First value">player.X+15</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">Slime_ov.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="776112236279511" type="Slime_ov">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="865625148679148">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="966958977625983" type="System">
-                            <param id="0" name="First value">player.X+15</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">Slime_ov.X</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="425413592117530" type="Slime_ov">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="176679376740967">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="580349232485850" type="System">
-                            <param id="0" name="First value">player.Y+15</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">Slime_ov.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="916432200834072" type="Slime_ov">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="743773285868891">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="880537445885826" type="System">
-                            <param id="0" name="First value">player.Y+15</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">Slime_ov.Y</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="930504735329916" type="Slime_ov">
-                            <param id="0" name="Control">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="751962187423490">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="438270097853530" type="player">
-                    <param id="0" name="Object">Slime_ov</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="6" name="Stop" sid="192697720668927" type="Mainmenu">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-                <action id="-25" name="Go to layout (by name)" sid="607970163419600" type="System">
-                    <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
-                </action>
-                <action id="-9" name="Destroy" sid="195224216432074" type="Slime_ov" />
-                <action id="-36" name="Save" sid="864854017030021" type="System">
-                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
                 </action>
             </actions>
         </event-block>

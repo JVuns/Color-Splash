@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Desert_engaged_ev</name>
+    <events>
+        <variable constant="0" name="Block" sid="465271389469050" static="0" type="number">3</variable>
+        <variable constant="0" name="Advantages" sid="689960362607185" static="0" type="number">0</variable>
+        <event-block sid="284307341054075">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="537374562248188" type="Player_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="260847332118924" type="Frame">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="396454878244295">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="264492654081729" type="Player_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="727604330313117" type="Frame">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692431727284144">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="481053775599007" type="Player_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="384197305854877" type="Frame">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="846080077905377">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="252067744075073" type="Player_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="473532708123053" type="Frame">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+                <action id="6" name="Stop" sid="961893949232635" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-37" name="Load" sid="608742766376384" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297082335037064">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="195137706817174" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="581630588710388" type="Enemy_eng">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="441029070742772">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="935477927130603" type="System">
+                            <param id="0" name="Object">PlayerPower</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="492688585206306" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="956903331144922" type="Mainmenu">
+                            <param id="0" name="Folder">0</param>
+                            <param id="1" name="Audio file name">&quot;Fight&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">0</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="167059121426350">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="114931546874438" type="PlayerPower">
+                    <param id="0" name="Object">EnemyPower</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="566202183416107">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="898451523845742" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="404850716519161" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="164432854168497" type="PlayerPower" />
+                        <action id="-11" name="Subtract from" sid="674948782837520" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="495294422096820" type="EnemyPower" />
+                    </actions>
+                </event-block>
+                <event-block sid="792150674859275">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="357702927009959" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="710081804229352" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="818144389684654" type="EnemyPower" />
+                        <action id="-10" name="Add to" sid="943523239573176" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="888815692271548" type="PlayerPower" />
+                    </actions>
+                </event-block>
+                <event-block sid="893544722834413">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="833592001352796" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="362036293450744" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="979978920305796" type="EnemyPower" />
+                        <action id="-10" name="Add to" sid="801298461176253" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="754450743342744" type="PlayerPower" />
+                    </actions>
+                </event-block>
+                <event-block sid="400502285138116">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="491228761580832" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="985347265061792" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="500449811967741" type="EnemyPower" />
+                        <action id="-11" name="Subtract from" sid="211698340985420" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="177443164215194" type="PlayerPower" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="132447281842520">
+            <conditions>
+                <condition id="17" name="On tap object" sid="369753014504539" type="Touch">
+                    <param id="0" name="Object">Sprite13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="460469978189726" type="PlayerPower" />
+                <action id="0" name="Spawn another object" sid="417124950138921" type="PlayerES">
+                    <param id="0" name="Object">PlayerPower</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="760430851275230" type="EnemyPower" />
+                <action id="0" name="Spawn another object" sid="989087289573633" type="EnemyES">
+                    <param id="0" name="Object">EnemyPower</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="528872065193859">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="215542209297171" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="955132113386373" type="Player_eng">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="289700971991399" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="541503701759874" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="582070107153991" type="Player_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="968910911598272" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="642682265295751">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="252183201695078" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="381381127716357" type="Enemy_eng">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="995756363083977" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="433920518464551" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action id="0" name="Play" sid="949075808670910" type="Mainmenu">
+                            <param id="0" name="Audio file">all-slime-sounds-minecraft-sound-effect-for-editing</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="497485852239646" type="Enemy_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="446109733280874" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="848303537972208">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="885271844251150" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="477076376002685" type="Enemy_eng">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">Advantages</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="534167569259131" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="847503889060671" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action id="0" name="Play" sid="901035048085439" type="Mainmenu">
+                            <param id="0" name="Audio file">all-slime-sounds-minecraft-sound-effect-for-editing</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="189571133303224" type="Enemy_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="327148553162175" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="627019985093546">
+            <conditions>
+                <condition id="17" name="On tap object" sid="650609756540204" type="Touch">
+                    <param id="0" name="Object">Sprite14</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="897890090474874">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="867582322212241" type="System">
+                            <param id="0" name="Variable">Block</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="450953813239145" type="Player_eng">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="750918369131212" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="939906695415272">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="463573525864700" type="System">
+                            <param id="0" name="Variable">Block</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="551370604091572" type="PlayerPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="660857413834093" type="System">
+                            <param id="0" name="Variable">Block</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="332470388418442">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="403225472861329" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="545644113563102" type="Frame2">
+                    <param id="0" name="Frame number">Enemy_eng.Health</param>
+                </action>
+                <action id="5" name="Set frame" sid="181048986125106" type="Frame3">
+                    <param id="0" name="Frame number">Advantages</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="841637184137103">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="459739968287701" type="Frame2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="530299827519497" type="PlayerPower" />
+                <action id="-9" name="Destroy" sid="328475649306063" type="EnemyPower" />
+            </actions>
+        </event-block>
+        <event-block sid="682580905111174">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="843228424258432" type="Enemy_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="500732547446912" type="Enemy_eng">
+                    <param id="0" name="Animation">&quot;ded&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886456610563907">
+            <conditions>
+                <condition id="4" name="On finished" sid="988999382522044" type="Enemy_eng">
+                    <param id="0" name="Animation">&quot;ded&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="492354194378386" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="809918037316944" type="System">
+                    <param id="0" name="Layout">Grass_ov</param>
+                </action>
+                <action id="-37" name="Load" sid="536736414008051" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="305591189776642" type="Enemy_eng" />
+                <action id="6" name="Stop" sid="297334113465465" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="753442548897467">
+            <conditions>
+                <condition id="4" name="On finished" sid="652475239549481" type="Enemy_eng">
+                    <param id="0" name="Animation">&quot;ded&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="353833467166193" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="945450455700138" type="System">
+                    <param id="0" name="Layout">Desert_ov</param>
+                </action>
+                <action id="-37" name="Load" sid="947537627575525" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="374183565787992" type="Enemy_eng" />
+                <action id="6" name="Stop" sid="966455301526144" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

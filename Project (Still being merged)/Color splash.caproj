@@ -1342,7 +1342,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="ZoneBlock1" sid="575433108754116">
+        <object-type name="ZoneBlock2" sid="575433108754116">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Solid" sid="238400594431023">
@@ -1427,6 +1427,67 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="PaintingToolsCollectible" sid="266454725348783">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="961608097545323" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Collectible Painting.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.333333" />
+                            <point x="0.666667" y="0.333333" />
+                            <point x="0.666667" y="0.666667" />
+                            <point x="0.333333" y="0.666667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ZoneBlock1" sid="766136160226449">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="941932894341426">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="WhistleCollectible" sid="211749269318961">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534805762744595" speed="7">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle000.png">
+                        <collision-poly>
+                            <point x="0.288889" y="0.288889" />
+                            <point x="0.488889" y="0.355556" />
+                            <point x="0.555556" y="0.444444" />
+                            <point x="0.622222" y="0.488889" />
+                            <point x="0.711111" y="0.711111" />
+                            <point x="0.488889" y="0.666667" />
+                            <point x="0.377778" y="0.622222" />
+                            <point x="0.133333" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle001.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle002.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle003.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle004.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle005.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle006.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle007.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle008.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle009.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Whistle\Whistle010.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WhistleCollectibleNotif" sid="720532320563333">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180283971265920" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Collectibles assets\Collectible Whistle.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1438,7 +1499,7 @@
     <event-folder>
         <event-sheet>Dessert_ev.xml</event-sheet>
         <event-sheet>Mainmenu_ev.xml</event-sheet>
-        <event-sheet>Engaged_ev.xml</event-sheet>
+        <event-sheet>Desert_engaged_ev.xml</event-sheet>
         <event-sheet>Grass_ev.xml</event-sheet>
     </event-folder>
     <global-instances>

@@ -3,12 +3,26 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Grass_ev</name>
     <events>
+        <variable constant="0" name="Layout" sid="639883659243041" static="0" type="number">0</variable>
+        <comment>Variable to check where the player layout previously is</comment>
+        <variable constant="0" name="Notif" sid="401791057756470" static="0" type="number">0</variable>
         <comment>Variable to check if the player is inside a conversation or not</comment>
         <variable constant="0" name="Dialogue" sid="513365848379062" static="0" type="number">0</variable>
         <comment>Variable to test wether the payer has already got the whistle or not</comment>
-        <variable constant="0" name="Whistle" sid="295348580363747" static="0" type="number">1</variable>
+        <variable constant="0" name="Whistle" sid="295348580363747" static="0" type="number">0</variable>
         <comment>Variable to check id the player already has the painting tools or not</comment>
         <variable constant="0" name="PaintingTools" sid="248881824948757" static="0" type="number">0</variable>
+        <event-block sid="539413487711126">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="502656233141952" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="373353246774431" type="System">
+                    <param id="0" name="Variable">Layout</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="569096026044339" title="Player Movement">
             <sub-events>
                 <event-block sid="905372423692161">
@@ -481,7 +495,7 @@
                                 <action behavior="8Direction" id="4" name="Set max speed" sid="998792447714505" type="player">
                                     <param id="0" name="Max Speed">64</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="716720860538097" type="ZoneBlock1" />
+                                <action id="-9" name="Destroy" sid="716720860538097" type="ZoneBlock2" />
                                 <action id="-42" name="Signal" sid="531761265047491" type="System">
                                     <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
                                 </action>
@@ -585,6 +599,41 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="563459492830894">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="915869031018078" type="player">
+                                    <param id="0" name="Object">OldManDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="373923203740774" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-42" name="Signal" sid="934970301155905" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="873422322324265" type="PaintingToolsCollectible">
+                                    <param id="0" name="X">243</param>
+                                    <param id="1" name="Y">128</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="667777085737724" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="488275208917074" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="933257397333044" type="System">
+                                    <param id="0" name="Tag">&quot;stopSpecialDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="891000215196555" type="PaintingToolsCollectible">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">-100</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="863516319647652">
                             <conditions>
                                 <condition id="1" name="Is overlapping another object" sid="254566793264229" type="player">
@@ -593,7 +642,7 @@
                                 <condition id="-14" name="Compare variable" sid="610058802054546" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -608,8 +657,9 @@
                                 <action behavior="8Direction" id="4" name="Set max speed" sid="478782699518297" type="player">
                                     <param id="0" name="Max Speed">64</param>
                                 </action>
+                                <action id="-9" name="Destroy" sid="681870629329125" type="ZoneBlock1" />
                                 <action id="-42" name="Signal" sid="759674365862042" type="System">
-                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                    <param id="0" name="Tag">&quot;stopSpecialDialogue&quot;</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="366095017377785" type="System">
                                     <param id="0" name="Variable">Dialogue</param>
@@ -715,6 +765,178 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="294226181659001" title="Collectible">
+            <sub-events>
+                <event-block sid="846845373921274">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="428202122848097" type="player">
+                            <param id="0" name="Object">WhistleCollectible</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="848145690879355" type="WhistleCollectible" />
+                        <action id="4" name="Set animation" sid="438166272826835" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="482815929869890" type="System">
+                            <param id="0" name="Variable">Whistle</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="428440674422145" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="300205241863978" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="705165031389487" type="player">
+                            <param id="0" name="Max Speed">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="225666961175874" type="WhistleCollectibleNotif">
+                            <param id="0" name="X">243</param>
+                            <param id="1" name="Y">128</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="330031269112371" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="266770858391218" type="System">
+                            <param id="0" name="Variable">Notif</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-41" name="Wait for signal" sid="619579348520722" type="System">
+                            <param id="0" name="Tag">&quot;OkNotif&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="646748196179743" type="WhistleCollectibleNotif">
+                            <param id="0" name="X">100</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="578846950814058">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="416041664666827" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="234621349677138" type="System">
+                    <param id="0" name="Variable">Notif</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="396959701584023" type="System">
+                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="370971533785980" type="System">
+                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="373305141541258" type="player">
+                    <param id="0" name="Max Speed">64</param>
+                </action>
+                <action id="-42" name="Signal" sid="997746898507223" type="System">
+                    <param id="0" name="Tag">&quot;OkNotif&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="553694656974510" type="System">
+                    <param id="0" name="Variable">Notif</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="382964239882185" title="NPC + Battle Detection Thingy">
+            <sub-events>
+                <event-block sid="530661829478505">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="532180087162718" type="Slime_ov">
+                            <param id="0" name="Object">player</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="837171030402748">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="434175538264404" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="451666337574304" type="Slime_ov">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="404746139251730">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="169252372296370" type="System">
+                                    <param id="0" name="First value">player.X+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.X</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="102505291244714" type="Slime_ov">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="889735820005232">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="917865899177229" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="781790551094643" type="Slime_ov">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="113687524738020">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="153663181285975" type="System">
+                                    <param id="0" name="First value">player.Y+15</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Slime_ov.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="471950214737536" type="Slime_ov">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="171560498192053">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="839147119527876" type="player">
+                            <param id="0" name="Object">Slime_ov</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="576317678561185" type="Mainmenu">
+                            <param id="0" name="Tag">&quot;&quot;</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="585701865896271" type="System">
+                            <param id="0" name="Layout">&quot;Dessert_eng&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="967253701881678" type="Slime_ov" />
+                        <action id="-36" name="Save" sid="539886696683309" type="System">
+                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
