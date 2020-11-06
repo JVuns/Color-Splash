@@ -90,11 +90,14 @@
                     <instance-variables>
                         <Health>5</Health>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>527.267944336</x>
-                        <y>196.512939453</y>
+                        <y>200.463867188</y>
                         <z>0</z>
                         <width>115.456947327</width>
                         <height>115.456947327</height>
@@ -115,6 +118,9 @@
                     <instance-variables>
                         <Health>3</Health>
                     </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -337,7 +343,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>505.610290527</x>
+                        <x>487.427856445</x>
                         <y>15.536628723</y>
                         <z>0</z>
                         <width>181.452758789</width>
@@ -359,7 +365,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>190.465270996</x>
+                        <x>172.282836914</x>
                         <y>20.687011719</y>
                         <z>0</z>
                         <width>203.110641479</width>
@@ -535,7 +541,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>316.913757324</x>
+                        <x>298.731323242</x>
                         <y>108.904212952</y>
                         <z>0</z>
                         <width>225.596832275</width>

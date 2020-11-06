@@ -23,6 +23,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -738,8 +739,13 @@
             <instance-variables>
                 <instance-variable name="Health" sid="777914647111476" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="831773713894127">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340899624586625" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340899624586625" speed="8">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\Texture\Dessert\Entities_sprite\Slime_anim\Frame001.png">
                         <collision-poly>
                             <point x="0.21875" y="0.21875" />
@@ -753,6 +759,21 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="13" loop="0" name="ded" pingpong="0" repeatcount="1" repeatto="0" sid="233682254707559" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Entities_sprite\Slime_anim\Frame013.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Player_eng" sid="832674890200217">
@@ -760,6 +781,11 @@
             <instance-variables>
                 <instance-variable name="Health" sid="135543610866213" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Flash" sid="965326663642735">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398797015699670" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Desktop\c2 mess\Main character Assets\engaged\Idle\Frame001.png">
@@ -1441,6 +1467,7 @@
         <file name="Fight.ogg" />
         <file name="HUD.ogg" />
         <file name="MainMenu.ogg" />
+        <file name="all-slime-sounds-minecraft-sound-effect-for-editing.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

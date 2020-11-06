@@ -71,7 +71,11 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="195137706817174" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="5" name="Set frame" sid="581630588710388" type="Enemy_eng">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="441029070742772">
                     <conditions>
@@ -194,13 +198,13 @@
                 <action id="-9" name="Destroy" sid="460469978189726" type="PlayerPower" />
                 <action id="0" name="Spawn another object" sid="417124950138921" type="PlayerES">
                     <param id="0" name="Object">PlayerPower</param>
-                    <param id="1" name="Layer">0</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="760430851275230" type="EnemyPower" />
                 <action id="0" name="Spawn another object" sid="989087289573633" type="EnemyES">
                     <param id="0" name="Object">EnemyPower</param>
-                    <param id="1" name="Layer">0</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -225,6 +229,14 @@
                         <action id="5" name="Set frame" sid="541503701759874" type="PlayerPower">
                             <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
                         </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="582070107153991" type="Player_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="968910911598272" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="642682265295751">
@@ -247,6 +259,20 @@
                         <action id="5" name="Set frame" sid="433920518464551" type="PlayerPower">
                             <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
                         </action>
+                        <action id="0" name="Play" sid="949075808670910" type="Mainmenu">
+                            <param id="0" name="Audio file">all-slime-sounds-minecraft-sound-effect-for-editing</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="497485852239646" type="Enemy_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="446109733280874" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="848303537972208">
@@ -268,6 +294,20 @@
                         </action>
                         <action id="5" name="Set frame" sid="847503889060671" type="PlayerPower">
                             <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                        </action>
+                        <action id="0" name="Play" sid="901035048085439" type="Mainmenu">
+                            <param id="0" name="Audio file">all-slime-sounds-minecraft-sound-effect-for-editing</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="189571133303224" type="Enemy_eng">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="327148553162175" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -330,6 +370,46 @@
                 <action id="5" name="Set frame" sid="181048986125106" type="Frame3">
                     <param id="0" name="Frame number">Advantages</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="841637184137103">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="459739968287701" type="Frame2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="530299827519497" type="PlayerPower" />
+                <action id="-9" name="Destroy" sid="328475649306063" type="EnemyPower" />
+            </actions>
+        </event-block>
+        <event-block sid="682580905111174">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="843228424258432" type="Enemy_eng">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="500732547446912" type="Enemy_eng">
+                    <param id="0" name="Animation">&quot;ded&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="753442548897467">
+            <conditions>
+                <condition id="4" name="On finished" sid="652475239549481" type="Enemy_eng">
+                    <param id="0" name="Animation">&quot;ded&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="947537627575525" type="System">
+                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="374183565787992" type="Enemy_eng" />
             </actions>
         </event-block>
     </events>
