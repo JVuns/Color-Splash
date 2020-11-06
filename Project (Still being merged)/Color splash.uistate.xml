@@ -16,8 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="6">Dessert_eng</layout>
         <event-sheet order="1">Mainmenu_ev</event-sheet>
         <event-sheet order="3">Grass_ev</event-sheet>
-        <event-sheet active="1" order="5">Dessert_ev</event-sheet>
-        <event-sheet order="7">Engaged_ev</event-sheet>
+        <event-sheet order="5">Dessert_ev</event-sheet>
+        <event-sheet active="1" order="7">Engaged_ev</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="0" name="About" />
