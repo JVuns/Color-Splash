@@ -11,12 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout active="1" order="2">Grass_ov</layout>
+        <layout order="2">Grass_ov</layout>
         <layout order="4">Desert_ov</layout>
         <layout order="6">Dessert_eng</layout>
         <event-sheet order="1">Mainmenu_ev</event-sheet>
         <event-sheet order="3">Grass_ev</event-sheet>
-        <event-sheet order="5">Dessert_ev</event-sheet>
+        <event-sheet active="1" order="5">Dessert_ev</event-sheet>
         <event-sheet order="7">Desert_engaged_ev</event-sheet>
     </open-tabs>
     <properties>

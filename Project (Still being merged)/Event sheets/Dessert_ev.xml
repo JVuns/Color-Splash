@@ -273,7 +273,45 @@
                                 <action behavior="8Direction" id="7" name="Simulate control" sid="776112236279511" type="Slime_ov">
                                     <param id="0" name="Control">0</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="763789524892827" type="Enemy_eng">
+                                    <param id="0" name="Animation">&quot;left&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="942453725547257">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="441089367602100" type="Enemy_eng">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">0</param>
+                                        </condition>
+                                        <condition id="-6" name="Every X seconds" sid="620717582271390" type="System">
+                                            <param id="0" name="Interval (seconds)">1.0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="881504389767048" type="Slime_ov">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="997995255103522">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="111535803789191" type="Enemy_eng">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                        <condition id="-6" name="Every X seconds" sid="154852187175133" type="System">
+                                            <param id="0" name="Interval (seconds)">1.0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="890770929677922" type="Slime_ov">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="865625148679148">
                             <conditions>

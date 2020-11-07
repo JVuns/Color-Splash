@@ -499,6 +499,22 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="2" loop="1" name="up" pingpong="0" repeatcount="0" repeatto="0" sid="179020473538345" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\up\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\up\Frame002.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="down" pingpong="0" repeatcount="0" repeatto="0" sid="301633222910033" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\down\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\down\Frame002.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="right" pingpong="0" repeatcount="0" repeatto="0" sid="756032641802646" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\right\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\right\Frame002.png" />
+                </animation>
+                <animation framecount="2" loop="1" name="left" pingpong="0" repeatcount="0" repeatto="0" sid="552959266024175" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\left\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\Slime_ov\left\Frame002.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="SlimeDetectRange" sid="383912618489879">
