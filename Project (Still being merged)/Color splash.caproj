@@ -1679,7 +1679,11 @@
         <file name="Fight.ogg" />
         <file name="HUD.ogg" />
         <file name="MainMenu.ogg" />
-        <file name="all-slime-sounds-minecraft-sound-effect-for-editing.ogg" />
+        <file name="Slime.ogg" />
+        <file name="explosion.ogg" />
+        <file name="electro.ogg" />
+        <file name="extinguish.ogg" />
+        <file name="Battle.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
