@@ -122,7 +122,7 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="492688585206306" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                         <action id="7" name="Play (by name)" sid="956903331144922" type="Mainmenu">
                             <param id="0" name="Folder">0</param>
@@ -247,6 +247,240 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="996293202610060">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="635795439898928" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="771015733958504" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="401596561787273" type="EnemyPower" />
+                        <action id="-10" name="Add to" sid="663676072070443" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="660752748249687" type="PlayerPower" />
+                        <action id="0" name="Play" sid="104178037547022" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571306622954038">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="219772643190560" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="810409469003185" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="328862619714538" type="EnemyPower" />
+                        <action id="-9" name="Set value" sid="990558484010351" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="998981813223991" type="PlayerPower" />
+                        <action id="0" name="Play" sid="655431905741047" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="585762246758506">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="110595253206253" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="633512750508055" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="963066874846784" type="EnemyPower" />
+                        <action id="-9" name="Set value" sid="728091324918542" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="158006015667059" type="PlayerPower" />
+                        <action id="0" name="Play" sid="515189108082949" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="182755089629849">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="264600359897575" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="905264592593160" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="547930136015701" type="EnemyPower" />
+                        <action id="-10" name="Add to" sid="718983791261137" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="489182639438407" type="PlayerPower" />
+                        <action id="0" name="Play" sid="741779416612920" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="621871455262971">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="528536518555510" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="692915339529955" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="919979708428185" type="EnemyPower" />
+                        <action id="-9" name="Destroy" sid="436826447680834" type="PlayerPower" />
+                        <action id="0" name="Play" sid="342884755610656" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="859246278602561" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="825187060556366">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="676642521535649" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="418688199015349" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="338887120940910" type="EnemyPower" />
+                        <action id="-9" name="Destroy" sid="255186835641261" type="PlayerPower" />
+                        <action id="0" name="Play" sid="300617309007655" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="427913263841780" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818755810641023">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="148508057447993" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="801911236854484" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="557717054096338" type="EnemyPower" />
+                        <action id="-10" name="Add to" sid="109368919145317" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="920068634100439" type="PlayerPower" />
+                        <action id="0" name="Play" sid="978150909914502" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="975944551280064">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="365161239256805" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="838989870113728" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="715883606233159" type="EnemyPower" />
+                        <action id="-9" name="Destroy" sid="298131828639087" type="PlayerPower" />
+                        <action id="0" name="Play" sid="164200724007916" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="812355482960613" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="717079422592946">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="982188605466183" type="EnemyPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="911282285163176" type="PlayerPower">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="296338968246750" type="EnemyPower" />
+                        <action id="-9" name="Destroy" sid="976064853877384" type="PlayerPower" />
+                        <action id="0" name="Play" sid="894565034116435" type="Mainmenu">
+                            <param id="0" name="Audio file">electro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="755248446380053" type="System">
+                            <param id="0" name="Variable">Advantages</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="132447281842520">
@@ -259,13 +493,13 @@
                 <action id="-9" name="Destroy" sid="460469978189726" type="PlayerPower" />
                 <action id="0" name="Spawn another object" sid="417124950138921" type="PlayerES">
                     <param id="0" name="Object">PlayerPower</param>
-                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount-3))</param>
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="760430851275230" type="EnemyPower" />
                 <action id="0" name="Spawn another object" sid="989087289573633" type="EnemyES">
                     <param id="0" name="Object">EnemyPower</param>
-                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount))</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount-3))</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -288,7 +522,7 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="541503701759874" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                         <action behavior="Flash" id="0" name="Flash" sid="582070107153991" type="Player_eng">
                             <param id="0" name="&apos;On&apos; time">0.1</param>
@@ -296,7 +530,7 @@
                             <param id="2" name="Duration">1.0</param>
                         </action>
                         <action id="5" name="Set frame" sid="968910911598272" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -318,7 +552,7 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="433920518464551" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                         <action id="0" name="Play" sid="949075808670910" type="Mainmenu">
                             <param id="0" name="Audio file">Slime</param>
@@ -332,7 +566,7 @@
                             <param id="2" name="Duration">1.0</param>
                         </action>
                         <action id="5" name="Set frame" sid="446109733280874" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -354,7 +588,7 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="847503889060671" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                         <action id="0" name="Play" sid="901035048085439" type="Mainmenu">
                             <param id="0" name="Audio file">Slime</param>
@@ -368,7 +602,7 @@
                             <param id="2" name="Duration">1.0</param>
                         </action>
                         <action id="5" name="Set frame" sid="327148553162175" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -396,7 +630,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="5" name="Set frame" sid="750918369131212" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -410,7 +644,7 @@
                     </conditions>
                     <actions>
                         <action id="5" name="Set frame" sid="551370604091572" type="PlayerPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-3))</param>
                         </action>
                         <action id="-11" name="Subtract from" sid="660857413834093" type="System">
                             <param id="0" name="Variable">Block</param>
@@ -544,6 +778,96 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block any="1" sid="136334192585033">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="720072954472764" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="114780631173058" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="705098851088054">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="260454834634439" type="PlayerPower">
+                            <param id="0" name="Object">PlayerPower</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="288389712737557" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="967938832195215" type="PlayerPower">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="744572879633902">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="497101028400375" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="853980143584907" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="799978670374597">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="224099213571706" type="PlayerPower">
+                            <param id="0" name="Object">PlayerPower</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="300566650628616" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="169347077961198" type="PlayerPower">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="486167698801294">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="150350053100072" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="463207567210487" type="PlayerPower">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="540698102627494">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="644459539962362" type="PlayerPower">
+                            <param id="0" name="Object">PlayerPower</param>
+                        </condition>
+                        <condition id="-6" name="Every X seconds" sid="742496087391806" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="710402132058582" type="PlayerPower">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
