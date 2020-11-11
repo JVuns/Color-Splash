@@ -499,7 +499,7 @@
                 <action id="-9" name="Destroy" sid="760430851275230" type="EnemyPower" />
                 <action id="0" name="Spawn another object" sid="989087289573633" type="EnemyES">
                     <param id="0" name="Object">EnemyPower</param>
-                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount-3))</param>
+                    <param id="1" name="Layer">int(random(0,self.AnimationFrameCount-1))</param>
                     <param id="2" name="Image point">0</param>
                 </action>
             </actions>
@@ -530,7 +530,7 @@
                             <param id="2" name="Duration">1.0</param>
                         </action>
                         <action id="5" name="Set frame" sid="968910911598272" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -565,8 +565,8 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">1.0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="446109733280874" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
+                        <action id="5" name="Set frame" sid="711735783081300" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -601,8 +601,8 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">1.0</param>
                         </action>
-                        <action id="5" name="Set frame" sid="327148553162175" type="EnemyPower">
-                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-4))</param>
+                        <action id="5" name="Set frame" sid="889832094937089" type="EnemyPower">
+                            <param id="0" name="Frame number">int(random(0,self.AnimationFrameCount-1))</param>
                         </action>
                     </actions>
                 </event-block>
