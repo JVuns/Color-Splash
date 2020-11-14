@@ -23,6 +23,12 @@
                     <param id="0" name="Variable">Layout</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="0" name="Play" sid="344536806698767" type="Mainmenu">
+                    <param id="0" name="Audio file">Purple Planet Music - Shenanigans (1_14) 150bpm</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="569096026044339" title="Player Movement">
