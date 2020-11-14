@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
@@ -1608,7 +1609,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground3" sid="827773619716837">
+        <object-type name="ZoneBlock3" sid="827773619716837">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Solid" sid="269793821397064">
@@ -1641,6 +1642,121 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="PauseMenuBackground" sid="805987321191410">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="ResumeButton" sid="940316081635995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439695742065238" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\Resume.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.08" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.973333" y="0.08" />
+                            <point x="1" y="0.48" />
+                            <point x="0.973333" y="0.92" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.0266667" y="0.92" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SaveButton" sid="546999412628032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886488514161082" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\Save.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.08" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.973333" y="0.08" />
+                            <point x="1" y="0.48" />
+                            <point x="0.973333" y="0.92" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.0266667" y="0.92" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HelpButton" sid="741050569170809">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297914505764973" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\Help.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.08" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.973333" y="0.08" />
+                            <point x="1" y="0.48" />
+                            <point x="0.973333" y="0.92" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.0266667" y="0.92" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseMenuSoundUi" sid="716411812745145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870117965577687" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\Sound Thingy.png">
+                        <collision-poly>
+                            <point x="0.04" y="0.04" />
+                            <point x="0.48" y="0" />
+                            <point x="0.96" y="0.04" />
+                            <point x="1" y="0.48" />
+                            <point x="0.96" y="0.96" />
+                            <point x="0.48" y="1" />
+                            <point x="0.04" y="0.96" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VolumeSliderBar" sid="176864549890267">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954682136957483" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\volume slide bar.png">
+                        <collision-poly>
+                            <point x="0.01" y="0.166667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.99" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.99" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.01" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VolumeSlider" sid="845660939298509">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="509884687781732">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520576402959053" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Pause Menu Assets\volume slider.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="527909888334077">
+            <plugin id="Mouse" />
         </object-type>
     </object-folder>
     <families />
@@ -1677,6 +1793,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="359" />
     </global-instances>
     <sounds-folder>
         <file name="Fight.ogg" />
