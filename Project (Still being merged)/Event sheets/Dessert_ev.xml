@@ -14,6 +14,106 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="359269362841093" title="Ignore arrow keys as input for movement1">
+            <sub-events>
+                <event-block sid="897783838578235">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="129943695386532" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="863238350054852" type="player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="743449220434034">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="206503717536301" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="211880092726113" type="player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="675466640707292">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="139318192675964" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="994004856652424" type="player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="473943720117329">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="557255273306357" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="354325372703837" type="player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="623570363789414">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="833843238927688" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="261588739851372" type="player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="738500975290482">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="694123187180986" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="671676971932159" type="player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="185797056174927">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="696311553338561" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="309943038332747" type="player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="617177355292539">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="743944712715176" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="892046392344009" type="player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="692186526100947" title="Player Movement1">
             <sub-events>
                 <event-block sid="653412521030117">
