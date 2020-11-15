@@ -1086,7 +1086,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505045303198846" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\New folder\Frame002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\New folder\end.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1094,7 +1094,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871767313166011" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\New folder\Frame001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\New folder\block.png" />
                 </animation>
             </animation-folder>
         </object-type>

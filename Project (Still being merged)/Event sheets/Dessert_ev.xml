@@ -3,17 +3,29 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dessert_ev</name>
     <events>
-        <event-block sid="796343359246588">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="791341723944607" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="452734180779747" type="System">
-                    <param id="0" name="Variable">Layout</param>
-                    <param id="1" name="Value">2</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="376833673986967" title="Desert Initializer">
+            <sub-events>
+                <event-block sid="796343359246588">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="791341723944607" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="452734180779747" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="133366893032771">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="121232889492475" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="326826137185376" type="Monolith" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="359269362841093" title="Ignore arrow keys as input for movement1">
             <sub-events>
                 <event-block sid="897783838578235">
@@ -592,58 +604,54 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="893024851356709">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="272986634710533" type="player">
-                    <param id="0" name="Object">EventTerrain</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="900088723926894" type="Keyboard">
-                    <param id="0" name="Key">13</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-43" name="Go to next/previous layout" sid="970410716854777" type="System">
-                    <param id="0" name="Which">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="906260886846051">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="813646339710545" type="player">
-                    <param id="0" name="Object">Monolith</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="814714932279024" type="Keyboard">
-                    <param id="0" name="Key">13</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="3" name="Start" sid="771185854603622" type="Monolith">
-                    <param id="0" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="133366893032771">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="121232889492475" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="326826137185376" type="Monolith" />
-            </actions>
-        </event-block>
-        <event-block sid="533966654400959">
-            <conditions>
-                <condition id="4" name="On finished" sid="935976177431335" type="Monolith">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-36" name="Save" sid="706552551266276" type="System">
-                    <param id="0" name="Slot">&quot;battle_save&quot;</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="170826395688417" type="System">
-                    <param id="0" name="Layout">Dessert_eng</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="598716158150859" title="Terrain Interactibles">
+            <sub-events>
+                <event-block sid="893024851356709">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="272986634710533" type="player">
+                            <param id="0" name="Object">EventTerrain</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="900088723926894" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="970410716854777" type="System">
+                            <param id="0" name="Which">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="906260886846051">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="813646339710545" type="player">
+                            <param id="0" name="Object">Monolith</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="814714932279024" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="771185854603622" type="Monolith">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="533966654400959">
+                    <conditions>
+                        <condition id="4" name="On finished" sid="935976177431335" type="Monolith">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="706552551266276" type="System">
+                            <param id="0" name="Slot">&quot;battle_save&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="170826395688417" type="System">
+                            <param id="0" name="Layout">Dessert_eng</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
