@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">MainMenu</layout>
+        <layout order="0">MainMenu</layout>
         <layout order="2">Grass_ov</layout>
         <layout order="4">Desert_ov</layout>
         <layout order="6">Dessert_eng</layout>
         <event-sheet order="1">Mainmenu_ev</event-sheet>
-        <event-sheet order="3">Grass_ev</event-sheet>
+        <event-sheet active="1" order="3">Grass_ev</event-sheet>
         <event-sheet order="5">Dessert_ev</event-sheet>
         <event-sheet order="7">Desert_engaged_ev</event-sheet>
     </open-tabs>
@@ -99,5 +99,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Villager3/" />
         <folder expanded="1" path="animation-folder/Sprite18/" />
         <folder expanded="1" path="animation-folder/KeyCollectible/" />
+        <folder expanded="1" path="animation-folder/ResumeButton/" />
+        <folder expanded="1" path="animation-folder/SaveButton/" />
+        <folder expanded="1" path="animation-folder/HelpButton/" />
+        <folder expanded="1" path="animation-folder/PauseMenuSoundUi/" />
+        <folder expanded="1" path="animation-folder/VolumeSliderBar/" />
+        <folder expanded="1" path="animation-folder/VolumeSlider/" />
     </folders-expanded>
 </c2uistate>
