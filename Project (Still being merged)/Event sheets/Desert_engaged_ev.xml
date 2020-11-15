@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Desert_engaged_ev</name>
     <events>
+        <variable constant="0" name="Power1" sid="220228555778034" static="0" type="number">0</variable>
+        <variable constant="0" name="Power2" sid="405175665129757" static="0" type="number">0</variable>
+        <variable constant="0" name="Power3" sid="814348113271832" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="226739902333330" static="0" type="number">0</variable>
         <variable constant="0" name="Block" sid="465271389469050" static="0" type="number">3</variable>
         <variable constant="0" name="Advantages" sid="689960362607185" static="0" type="number">0</variable>
@@ -488,6 +491,11 @@
                                 <condition id="-6" name="Every X seconds" sid="288389712737557" type="System">
                                     <param id="0" name="Interval (seconds)">2</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="278704114945471" type="System">
+                                    <param id="0" name="Variable">Power1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="5" name="Set frame" sid="967938832195215" type="PlayerPower">
@@ -518,6 +526,11 @@
                                 <condition id="-6" name="Every X seconds" sid="300566650628616" type="System">
                                     <param id="0" name="Interval (seconds)">2</param>
                                 </condition>
+                                <condition id="-14" name="Compare variable" sid="679442985971052" type="System">
+                                    <param id="0" name="Variable">Power2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="5" name="Set frame" sid="169347077961198" type="PlayerPower">
@@ -547,6 +560,11 @@
                                 </condition>
                                 <condition id="-6" name="Every X seconds" sid="742496087391806" type="System">
                                     <param id="0" name="Interval (seconds)">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="322932660866820" type="System">
+                                    <param id="0" name="Variable">Power3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>

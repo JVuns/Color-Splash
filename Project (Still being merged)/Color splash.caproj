@@ -1758,6 +1758,14 @@
         <object-type name="Mouse" sid="527909888334077">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="Sprite20" sid="558285205791250">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989366037801454" speed="5">
+                    <frame duration="1" hotspotX="-1.54054" hotspotY="1.95238" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\Dessert\Ov_tileset\BaseTerrain.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
