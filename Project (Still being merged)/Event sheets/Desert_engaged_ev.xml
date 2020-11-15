@@ -35,7 +35,7 @@
                                     <param id="0" name="Folder">0</param>
                                     <param id="1" name="Audio file name">&quot;Battle&quot;</param>
                                     <param id="3" name="Loop">1</param>
-                                    <param id="4" name="Volume">-35</param>
+                                    <param id="4" name="Volume">-24</param>
                                     <param id="2" name="Tag (optional)">&quot;Battle&quot;</param>
                                 </action>
                             </actions>
