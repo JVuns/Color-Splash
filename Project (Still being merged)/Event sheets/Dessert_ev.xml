@@ -897,7 +897,7 @@
                                     <param id="0" name="Max Speed">0</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="403557400278971" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">4</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
                                 <action behavior="DragDrop" id="0" name="Set enabled" sid="738173378973372" type="VolumeSlider">
@@ -918,7 +918,7 @@
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="776571312841257" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">4</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
                                 <action behavior="DragDrop" id="0" name="Set enabled" sid="912344443640044" type="VolumeSlider">

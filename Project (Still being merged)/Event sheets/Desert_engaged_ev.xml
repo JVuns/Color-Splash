@@ -36,7 +36,7 @@
                                     <param id="1" name="Audio file name">&quot;Battle&quot;</param>
                                     <param id="3" name="Loop">1</param>
                                     <param id="4" name="Volume">-35</param>
-                                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                                    <param id="2" name="Tag (optional)">&quot;Battle&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -681,7 +681,7 @@
                         </action>
                         <action id="-9" name="Destroy" sid="305591189776642" type="Enemy_eng" />
                         <action id="6" name="Stop" sid="297334113465465" type="Mainmenu">
-                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="0" name="Tag">&quot;Battle&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -705,7 +705,7 @@
                         </action>
                         <action id="-9" name="Destroy" sid="374183565787992" type="Enemy_eng" />
                         <action id="6" name="Stop" sid="966455301526144" type="Mainmenu">
-                            <param id="0" name="Tag">&quot;&quot;</param>
+                            <param id="0" name="Tag">&quot;Battle&quot;</param>
                         </action>
                     </actions>
                 </event-block>
