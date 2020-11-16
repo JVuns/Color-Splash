@@ -1756,12 +1756,456 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="507943433125521" title="Fisherman - Dialogue">
+            <sub-events>
+                <event-block sid="325530776800188">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="961912188220362" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="603329924092618" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="412118293175339">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="435783155509588" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="555437602261037" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="169763184390596" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="513414272271756" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="891537993372676" type="System">
+                                    <param id="0" name="Variable">Key</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="473340216377270" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="793209356956333" type="Fisher1">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="566911336998258" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="557098320460490" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="481570675052472" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="870996501846413" type="Fisher1">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="797401604676802">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="990885119451454" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="593226326470563" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="733041006797699" type="Fisher2">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="534658862087056" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="565277786931830" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="946073430735381" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="940096372494738" type="Fisher2">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">550</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="431967703669478">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="810907717511891" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="189983973641639" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="403925909008208" type="Fisher3">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="265607626579694" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="666047062313422" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="556619188853709" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="268408530232991" type="Fisher3">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">600</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536270930864418">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="791182501929209" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="287663918022165" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="132041586685749" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="602836621037006" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="194757772563914" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
+                                <action id="-42" name="Signal" sid="608863917345539" type="System">
+                                    <param id="0" name="Tag">&quot;StopDialogue&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="694764248569892" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="417344598434506" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="836211149177863">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="417901190518432" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="910495165497300" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="487289209119974">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="821902898357607" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="695618477350686" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="801006226850090" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="865171713161744" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="121480004972713" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="284279767249215" type="Fisher4">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="417870490770054" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="562047956805101" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="826316076578316" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="741689738973891" type="Fisher4">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">650</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="552103959244296">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="301403515379373" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="947832203775573" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="600422136097442" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="835330657311459" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="628663889472143" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
+                                <action id="-42" name="Signal" sid="946689790796639" type="System">
+                                    <param id="0" name="Tag">&quot;StopDialogue&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="196606305545875" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="583711150226565" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="734026035676441">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="539762527207954" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="762697492084627" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="829188927112303">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="161751934191376" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="819191830212339" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="507916110113172" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="549968022056348" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="721583018945968" type="player">
+                                    <param id="0" name="Max Speed">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="571557766971974" type="Fisher5">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="655439178319798" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="414586091870551" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="816070872018269" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="233507746722325" type="Fisher5">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">700</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="391549528968746">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="406161582659861" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="720061849333910" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="311316211857327" type="Fisher6">
+                                    <param id="0" name="X">154</param>
+                                    <param id="1" name="Y">255</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="218347584224349" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="711377108981075" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-41" name="Wait for signal" sid="344595358548663" type="System">
+                                    <param id="0" name="Tag">&quot;stopDialogue&quot;</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="961349981711623" type="Fisher6">
+                                    <param id="0" name="X">-325</param>
+                                    <param id="1" name="Y">750</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="451788603265673">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="865702109327028" type="player">
+                                    <param id="0" name="Object">FishermanDialogueZone</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="203477331951565" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="868810877590675" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="730261525478330" type="System">
+                                    <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="436977748064188" type="player">
+                                    <param id="0" name="Max Speed">64</param>
+                                </action>
+                                <action id="-42" name="Signal" sid="620060158362437" type="System">
+                                    <param id="0" name="Tag">&quot;StopDialogue&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="338121552872152" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="891700762679423" type="System">
+                                    <param id="0" name="Variable">Dialogue</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="590846533452717" type="System">
+                                    <param id="0" name="Variable">Key</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="294226181659001" title="Collectible">
             <sub-events>
+                <event-block sid="119261478322566">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="536239290775258" type="player">
+                            <param id="0" name="Object">KeyCollectible</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="180362288643670" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="126615758222561" type="KeyCollectible" />
+                        <action id="4" name="Set animation" sid="926905724438634" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="681310303352596" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="670388902426020" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="537780017106321" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="554931166784496" type="player">
+                            <param id="0" name="Max Speed">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="794827644274294" type="keyCollectibleNotif">
+                            <param id="0" name="X">293</param>
+                            <param id="1" name="Y">128</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="239595533801867" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="903856040733986" type="System">
+                            <param id="0" name="Variable">Notif</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-41" name="Wait for signal" sid="259200358372801" type="System">
+                            <param id="0" name="Tag">&quot;OkNotif&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="632783558688157" type="keyCollectibleNotif">
+                            <param id="0" name="X">96</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="860561961179904">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="472316265114803" type="player">
                             <param id="0" name="Object">KeyCollectible</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="334599176447501" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1772,7 +2216,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="690080910896882" type="System">
                             <param id="0" name="Variable">Key</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-12" name="Set group active" sid="198059820118657" type="System">
                             <param id="0" name="Group name">&quot;Player Movement&quot;</param>

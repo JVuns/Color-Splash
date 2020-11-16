@@ -1845,6 +1845,147 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite21" sid="355431077790992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455906244499810" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Characters\Fisherman\Fisherman.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.65625" y="0.34375" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher1" sid="925621463175218">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="884392063415974" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher1.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher2" sid="417997621123896">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220464269508179" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher2.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher3" sid="711024716166694">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863367028508972" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher3.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher4" sid="710328452305163">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="313441580507902" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher4.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="577680216386360">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662628777107475" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher3.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher5" sid="254903694531629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663718183278197" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher5.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fisher6" sid="710107445618607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540865919189053" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Dialogue Assets\Fisher6.png">
+                        <collision-poly>
+                            <point x="0.00666667" y="0.0444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993333" y="0.0444444" />
+                            <point x="0.993333" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00666667" y="0.955556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FishermanDialogueZone" sid="339620483620634">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
