@@ -190,6 +190,10 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;GrassTheme&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="946994350529750" type="player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="825100675753266">
