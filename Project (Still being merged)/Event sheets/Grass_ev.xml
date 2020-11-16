@@ -12,6 +12,8 @@
         <comment>Variable to check if the player is having a conversation/notification or not</comment>
         <variable constant="0" name="Notif" sid="401791057756470" static="0" type="number">0</variable>
         <variable constant="0" name="Dialogue" sid="513365848379062" static="0" type="number">0</variable>
+        <comment>Variable to check wether the player has already got the key or not</comment>
+        <variable constant="0" name="Key" sid="639719418391233" static="0" type="number">0</variable>
         <comment>Variable to test wether the payer has already got the whistle or not</comment>
         <variable constant="0" name="Whistle" sid="295348580363747" static="0" type="number">0</variable>
         <comment>Variable to check id the player already has the painting tools or not</comment>
@@ -1756,6 +1758,53 @@
         </event-group>
         <event-group description="" sid="294226181659001" title="Collectible">
             <sub-events>
+                <event-block sid="860561961179904">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="472316265114803" type="player">
+                            <param id="0" name="Object">KeyCollectible</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="445909222584738" type="KeyCollectible" />
+                        <action id="4" name="Set animation" sid="721489485011978" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="690080910896882" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="198059820118657" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="978189569429534" type="System">
+                            <param id="0" name="Group name">&quot;Player Movement Animation&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="445923268112790" type="player">
+                            <param id="0" name="Max Speed">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="113458091009169" type="Sprite21">
+                            <param id="0" name="X">243</param>
+                            <param id="1" name="Y">128</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="368672824872050" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="787822688285091" type="System">
+                            <param id="0" name="Variable">Notif</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-41" name="Wait for signal" sid="205631249044576" type="System">
+                            <param id="0" name="Tag">&quot;OkNotif&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="935188188905017" type="Sprite21">
+                            <param id="0" name="X">96</param>
+                            <param id="1" name="Y">-100</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="846845373921274">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="428202122848097" type="player">
