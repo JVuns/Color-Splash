@@ -1837,7 +1837,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite21" sid="517403192740605">
+        <object-type name="keyCollectibleNotif" sid="517403192740605">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219539681269514" speed="5">

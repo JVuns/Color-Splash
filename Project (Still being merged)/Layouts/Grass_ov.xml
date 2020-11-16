@@ -4883,28 +4883,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite21" uid="431">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>200</x>
-                        <y>-100</y>
-                        <z>0</z>
-                        <width>96</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -5212,8 +5190,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1165.791137695</x>
-                        <y>687.699829102</y>
+                        <x>1025</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -11966,8 +11944,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1370.030761719</x>
-                        <y>608.006958008</y>
+                        <x>1367.4140625</x>
+                        <y>597.533630371</y>
                         <z>0</z>
                         <width>20.920654297</width>
                         <height>21.711791992</height>
@@ -12030,6 +12008,28 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>100</x>
+                        <y>-100</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="keyCollectibleNotif" uid="431">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>200</x>
                         <y>-100</y>
                         <z>0</z>
                         <width>96</width>
