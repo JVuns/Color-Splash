@@ -18,328 +18,334 @@
         <variable constant="0" name="Whistle" sid="295348580363747" static="0" type="number">0</variable>
         <comment>Variable to check id the player already has the painting tools or not</comment>
         <variable constant="0" name="PaintingTools" sid="248881824948757" static="0" type="number">0</variable>
-        <event-block sid="539413487711126">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="502656233141952" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="373353246774431" type="System">
-                    <param id="0" name="Variable">Layout</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="0" name="Play" sid="201345686433745" type="Mainmenu">
-                    <param id="0" name="Audio file">Purple Planet Music - Shenanigans (1_14) 150bpm</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;GrassTheme&quot;</param>
-                </action>
-                <action id="-12" name="Set group active" sid="151830106314764" type="System">
-                    <param id="0" name="Group name">&quot;Pause Button Functionability&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-            </actions>
+        <event-group description="" sid="328293949193713" title="Grass Overworld Initializer">
             <sub-events>
-                <event-block sid="669959156079582">
+                <event-block sid="539413487711126">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="527430988949086" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="502656233141952" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="436528874135554" type="VolumeSlider">
-                            <param id="0" name="X">285</param>
+                        <action id="-9" name="Set value" sid="373353246774431" type="System">
+                            <param id="0" name="Variable">Layout</param>
+                            <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Play" sid="201345686433745" type="Mainmenu">
+                            <param id="0" name="Audio file">Purple Planet Music - Shenanigans (1_14) 150bpm</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;GrassTheme&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="151830106314764" type="System">
+                            <param id="0" name="Group name">&quot;Pause Button Functionability&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="440430020689895" type="Dooraemon" />
                     </actions>
+                    <sub-events>
+                        <event-block sid="669959156079582">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="527430988949086" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="436528874135554" type="VolumeSlider">
+                                    <param id="0" name="X">285</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="172750440019027">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="125350432698386" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="822133436760098" type="VolumeSlider">
+                                    <param id="0" name="X">295</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="579444421009032">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="860028752903057" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="998295248138265" type="VolumeSlider">
+                                    <param id="0" name="X">305</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536239428262494">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="417846963507761" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="281104315052428" type="VolumeSlider">
+                                    <param id="0" name="X">315</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="340850728532855">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="434266559574059" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="862307571278284" type="VolumeSlider">
+                                    <param id="0" name="X">325</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="336016953936009">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="189709298877439" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="326937296533847" type="VolumeSlider">
+                                    <param id="0" name="X">335</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="764874245116243">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="353614755753409" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="603819014416144" type="VolumeSlider">
+                                    <param id="0" name="X">345</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="767138500524578">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="803910977869799" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="370067285966394" type="VolumeSlider">
+                                    <param id="0" name="X">355</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="307393480176977">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="298787523123246" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="353976535786618" type="VolumeSlider">
+                                    <param id="0" name="X">365</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="345054002507742">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="612287889640688" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="786306611318509" type="VolumeSlider">
+                                    <param id="0" name="X">375</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="172750440019027">
+                <event-block sid="501232130679528">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="125350432698386" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
+                        <condition id="-29" name="On load complete" sid="206541773894629" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="822133436760098" type="VolumeSlider">
-                            <param id="0" name="X">295</param>
+                        <action id="0" name="Play" sid="930291423891314" type="Mainmenu">
+                            <param id="0" name="Audio file">Purple Planet Music - Shenanigans (1_14) 150bpm</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;GrassTheme&quot;</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="579444421009032">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="860028752903057" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="998295248138265" type="VolumeSlider">
-                            <param id="0" name="X">305</param>
+                        <action id="4" name="Set animation" sid="946994350529750" type="player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
+                        <action id="2" name="Stop" sid="659429049678438" type="Dooraemon" />
                     </actions>
-                </event-block>
-                <event-block sid="536239428262494">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="417846963507761" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="281104315052428" type="VolumeSlider">
-                            <param id="0" name="X">315</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="340850728532855">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="434266559574059" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="862307571278284" type="VolumeSlider">
-                            <param id="0" name="X">325</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="336016953936009">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="189709298877439" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="326937296533847" type="VolumeSlider">
-                            <param id="0" name="X">335</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="764874245116243">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="353614755753409" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">6</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="603819014416144" type="VolumeSlider">
-                            <param id="0" name="X">345</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="767138500524578">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="803910977869799" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">7</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="370067285966394" type="VolumeSlider">
-                            <param id="0" name="X">355</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="307393480176977">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="298787523123246" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="353976535786618" type="VolumeSlider">
-                            <param id="0" name="X">365</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="345054002507742">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="612287889640688" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="786306611318509" type="VolumeSlider">
-                            <param id="0" name="X">375</param>
-                        </action>
-                    </actions>
+                    <sub-events>
+                        <event-block sid="825100675753266">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="520816551795321" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="206769755624374" type="VolumeSlider">
+                                    <param id="0" name="X">285</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="379344515901905">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="174492537985656" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="411069413048326" type="VolumeSlider">
+                                    <param id="0" name="X">295</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="267415563776292">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="665191404424116" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="417719331936566" type="VolumeSlider">
+                                    <param id="0" name="X">305</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="850357313403983">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="287158164051760" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="553577103176454" type="VolumeSlider">
+                                    <param id="0" name="X">315</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="596298630744268">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="459412544073742" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="808411698831923" type="VolumeSlider">
+                                    <param id="0" name="X">325</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="853535366656520">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="242016397475458" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="706195076754724" type="VolumeSlider">
+                                    <param id="0" name="X">335</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="911422254211489">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="158526406461192" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="474233748854131" type="VolumeSlider">
+                                    <param id="0" name="X">345</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="418943945458792">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="339916312105345" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="459609326627120" type="VolumeSlider">
+                                    <param id="0" name="X">355</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="754530124589701">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="473783569969940" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="218833246789711" type="VolumeSlider">
+                                    <param id="0" name="X">365</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="410624535434581">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="368683882159225" type="System">
+                                    <param id="0" name="Variable">Volume</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="683818571340420" type="VolumeSlider">
+                                    <param id="0" name="X">375</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="501232130679528">
-            <conditions>
-                <condition id="-29" name="On load complete" sid="206541773894629" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="930291423891314" type="Mainmenu">
-                    <param id="0" name="Audio file">Purple Planet Music - Shenanigans (1_14) 150bpm</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;GrassTheme&quot;</param>
-                </action>
-                <action id="4" name="Set animation" sid="946994350529750" type="player">
-                    <param id="0" name="Animation">&quot;Idle&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="825100675753266">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="520816551795321" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="206769755624374" type="VolumeSlider">
-                            <param id="0" name="X">285</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="379344515901905">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="174492537985656" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="411069413048326" type="VolumeSlider">
-                            <param id="0" name="X">295</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="267415563776292">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="665191404424116" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="417719331936566" type="VolumeSlider">
-                            <param id="0" name="X">305</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="850357313403983">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="287158164051760" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="553577103176454" type="VolumeSlider">
-                            <param id="0" name="X">315</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="596298630744268">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="459412544073742" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="808411698831923" type="VolumeSlider">
-                            <param id="0" name="X">325</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="853535366656520">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="242016397475458" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="706195076754724" type="VolumeSlider">
-                            <param id="0" name="X">335</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="911422254211489">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="158526406461192" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">6</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="474233748854131" type="VolumeSlider">
-                            <param id="0" name="X">345</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="418943945458792">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="339916312105345" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">7</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="459609326627120" type="VolumeSlider">
-                            <param id="0" name="X">355</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="754530124589701">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="473783569969940" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="218833246789711" type="VolumeSlider">
-                            <param id="0" name="X">365</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="410624535434581">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="368683882159225" type="System">
-                            <param id="0" name="Variable">Volume</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-1" name="Set X" sid="683818571340420" type="VolumeSlider">
-                            <param id="0" name="X">375</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
+        </event-group>
         <event-group description="" sid="783718235026233" title="Pause Menu">
             <sub-events>
                 <event-block sid="659820534860114">
@@ -2508,5 +2514,40 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="743841726149079">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="744364893998041" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="751482630617679" type="System">
+                    <param id="0" name="Variable">Key</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="307296580154226" type="player">
+                    <param id="0" name="Object">DoorInteractableZone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="907086750357041" type="Dooraemon">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="723153908473260">
+            <conditions>
+                <condition id="4" name="On finished" sid="569331394145750" type="Dooraemon">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="717000296677220" type="System">
+                    <param id="0" name="Layout">Desert_ov</param>
+                </action>
+                <action id="6" name="Stop" sid="121388370345808" type="Mainmenu">
+                    <param id="0" name="Tag">&quot;GrassTheme&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

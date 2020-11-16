@@ -11,11 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout order="2">Grass_ov</layout>
+        <layout active="1" order="2">Grass_ov</layout>
         <layout order="4">Desert_ov</layout>
         <layout order="6">Dessert_eng</layout>
         <event-sheet order="1">Mainmenu_ev</event-sheet>
-        <event-sheet active="1" order="3">Grass_ev</event-sheet>
+        <event-sheet order="3">Grass_ev</event-sheet>
         <event-sheet order="5">Dessert_ev</event-sheet>
         <event-sheet order="7">Desert_engaged_ev</event-sheet>
     </open-tabs>
@@ -115,5 +115,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite22/" />
         <folder expanded="1" path="animation-folder/Fisher5/" />
         <folder expanded="1" path="animation-folder/Fisher6/" />
+        <folder expanded="1" path="animation-folder/Dooraemon/" />
     </folders-expanded>
 </c2uistate>

@@ -2463,28 +2463,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="treeObject" uid="192">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1170.076782227</x>
-                        <y>383.370513916</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>80</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="treeObject" uid="193">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -5212,8 +5190,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>957.364257813</x>
-                        <y>653.040100098</y>
+                        <x>1023.338256836</x>
+                        <y>797.537231445</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -10362,11 +10340,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>987.084960938</x>
-                        <y>339.335906982</y>
+                        <x>987.084838867</x>
+                        <y>339.274719238</y>
                         <z>0</z>
                         <width>190.999313354</width>
-                        <height>62.328659058</height>
+                        <height>62.389846802</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -11454,6 +11432,33 @@
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
+                <instance type="Player_ES" uid="441">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1079.710205078</x>
+                        <y>773.106872559</y>
+                        <z>0</z>
+                        <width>28.314620972</width>
+                        <height>26.646591187</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.5</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -11546,6 +11551,66 @@
                         <z>0</z>
                         <width>58.292053223</width>
                         <height>61.655822754</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.300000012</opacity>
+                    </world>
+                </instance>
+                <instance type="DoorInteractableZone" uid="442">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1080.483642578</x>
+                        <y>779.854858398</y>
+                        <z>0</z>
+                        <width>26.038208008</width>
+                        <height>44.29699707</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.300000012</opacity>
+                    </world>
+                </instance>
+                <instance type="DoorInteractableZone" uid="443">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1106.513305664</x>
+                        <y>800.032348633</y>
+                        <z>0</z>
+                        <width>26.038208008</width>
+                        <height>24.082946777</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.300000012</opacity>
+                    </world>
+                </instance>
+                <instance type="DoorInteractableZone" uid="444">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1054.443847656</x>
+                        <y>800.075622559</y>
+                        <z>0</z>
+                        <width>26.038208008</width>
+                        <height>24.020141602</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -12123,6 +12188,50 @@
                         <z>0</z>
                         <width>20.920654297</width>
                         <height>21.711791992</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="treeObject" uid="192">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1170.076782227</x>
+                        <y>383.370513916</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>80</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Dooraemon" uid="440">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1061.303466797</x>
+                        <y>744.67779541</y>
+                        <z>0</z>
+                        <width>60.899047852</width>
+                        <height>59.620666504</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

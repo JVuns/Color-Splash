@@ -1986,6 +1986,77 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="Dooraemon" sid="534971686208242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="574633332762696" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon000.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon001.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon002.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon003.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon004.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\School stuff\School Projects and Assignments\Construct 2 Project\Interactable\Dooraemon005.png">
+                        <collision-poly>
+                            <point x="0.314815" y="0.314815" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.907407" />
+                            <point x="0.314815" y="0.685185" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorInteractableZone" sid="878455824141550">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
