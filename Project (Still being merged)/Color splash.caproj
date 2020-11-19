@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
@@ -2056,6 +2057,35 @@
         <object-type name="DoorInteractableZone" sid="878455824141550">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="9patch" sid="481125571832206">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="9patch2" sid="984743528385324">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="collider" sid="369354230747082">
+            <plugin id="NinePatch" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite23" sid="152807005531999">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="713349999729600" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DessertBox1" sid="455938252982616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540351830038497" speed="0">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\textbox\Frame002.png" />
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\textbox\Frame001.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

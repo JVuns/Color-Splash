@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Dessert_ev</name>
     <events>
+        <variable constant="0" name="CatChatbox" sid="141190987238223" static="0" type="number">0</variable>
         <event-group description="" sid="376833673986967" title="Desert Initializer">
             <sub-events>
                 <event-block sid="796343359246588">
@@ -1097,6 +1098,73 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="563205798676288" title="CatChatBox">
+            <sub-events>
+                <event-block sid="429292544359051">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="589677415710387" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="458379641532501" type="Player_eng">
+                            <param id="0" name="Object">Sprite20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="480725512563149" type="System">
+                            <param id="0" name="Variable">CatChatbox</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="713428210370322" type="DessertBox1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="166374280654679" type="System">
+                            <param id="0" name="Variable">CatChatbox</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="432766077755042">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="902406578973645" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="840838514579863" type="System">
+                            <param id="0" name="Variable">CatChatbox</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="321064204712229" type="DessertBox1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="324943063623584" type="System">
+                            <param id="0" name="Variable">CatChatbox</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="733398455359581">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="203156669181614" type="Keyboard">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="909536380957524" type="Player_eng">
+                            <param id="0" name="Object">collider</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="576386480334166" type="System">
+                            <param id="0" name="Variable">CatChatbox</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="803098419062892" type="DessertBox1" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
