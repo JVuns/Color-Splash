@@ -30,6 +30,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="NPC" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="NT Sprites" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="HUD" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="NPCHUD" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

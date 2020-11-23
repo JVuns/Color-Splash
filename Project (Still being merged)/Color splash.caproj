@@ -27,6 +27,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -2084,6 +2085,60 @@
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540351830038497" speed="0">
                     <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\textbox\Frame002.png" />
                     <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\textbox\Frame001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="969753497921489">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286950975847809" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="762436230242343">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361601920492848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Documents\GitHub\Color-Splash\.git\Texture\HUD\New folder\Credit button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="847806907896168">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941461980087868" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Games\Aseprite.v1.2.21\Aseprite\Sprite-0001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="201792088322690">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="808267017481917">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367508575404142" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Downloads\Sprite-000111.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Invisbor" sid="133040138080886">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="238184455366206" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Games\Aseprite.v1.2.21\Aseprite\Sprite-0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Downloads\quickbar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inviss" sid="716445678477592">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671000890362053" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\jevon\Downloads\quickbar.png" />
                 </animation>
             </animation-folder>
         </object-type>
